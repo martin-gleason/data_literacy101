@@ -88,7 +88,7 @@ Excercise 1: How do you use data?
 ---
 class: center
 # Sharing is Caring
-.center[![](imgs/giphy.mp4)]
+.center[![](imgs/giphy.gif)]
 
 
 .center[Who wants to share how they use data?]
