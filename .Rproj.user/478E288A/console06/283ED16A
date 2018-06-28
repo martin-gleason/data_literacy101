@@ -197,4 +197,22 @@ error: Your local changes to the following files would be overwritten by checkou
 	.Rproj.user/478E288A/sources/prop/5B5F0E87
 Please commit your changes or stash them before you switch branches.
 Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ Saved working directory and index state WIP on master: 04446b1 "Gui commit"
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/478E288A/console06/283ED16A
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git comm[K[K[K[Kadd .
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git committ[K "add rpj[K[K[K[K s83[K[K[K283ed16a
+> 
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push origin master
+Everything up-to-date
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/478E288A/console06/283ED16A
+Please commit your changes or stash them before you switch branches.
+Aborting
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
