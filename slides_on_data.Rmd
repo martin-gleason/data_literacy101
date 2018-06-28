@@ -435,7 +435,7 @@ class: center
 .center[![Thank You](imgs/anyQuestionsDavidSPumpkins.gif)]
 
 * Please fill out your evaluation forms
-* Email [martin.gleason@cookcountil.gov)](mailto: martin.gleason@cookcountil.gov) if you have questions, comments, or vague misgivings
+* Email [martin.gleason@cookcountil.gov](mailto: martin.gleason@cookcountil.gov) if you have questions, comments, or vague misgivings
 
 
 

@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1031683749",
+    "hash" : "3815922703",
     "id" : "4E5B6513",
-    "lastKnownWriteTime" : 1530201148,
-    "last_content_update" : 1530201148496,
+    "lastKnownWriteTime" : 1530202189,
+    "last_content_update" : 1530202189091,
     "path" : "~/Dropbox (Personal)/Coding Projects/R/data_literacy101/slides_on_data.Rmd",
     "project_path" : "slides_on_data.Rmd",
     "properties" : {
-        "cursorPosition" : "22,8",
-        "scrollLine" : "0"
+        "cursorPosition" : "437,39",
+        "scrollLine" : "430"
     },
     "relative_order" : 1,
     "source_on_save" : false,

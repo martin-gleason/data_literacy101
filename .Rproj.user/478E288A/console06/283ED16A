@@ -1,3 +1,146 @@
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101[?1034hKnowhere:data_literacy101 marty$ git init
 Initialized empty Git repository in /Users/marty/Dropbox (Personal)/Coding Projects/R/data_literacy101/.git/
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git add .
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git commit - m [K[K[Km "First [K[K[K[K[K[KFirst commit in clean repo"
+[master (root-commit) 6f3e020] First commit in clean repo
+ 99 files changed, 3096 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .Rproj.user/478E288A/console06/283ED16A
+ create mode 100644 .Rproj.user/478E288A/console06/INDEX001
+ create mode 100644 .Rproj.user/478E288A/sources/prop/5B5F0E87
+ create mode 100644 .Rproj.user/478E288A/sources/prop/INDEX
+ create mode 100644 .Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513
+ create mode 100644 .Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513-contents
+ create mode 100644 .Rproj.user/478E288A/sources/s-A598D0F8/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/478E288AA598D0F8/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 DataScience for the Court 101.Rproj
+ create mode 100644 Galton's_correlation_diagram_1875.jpg
+ create mode 100644 cpd_data.R
+ create mode 100644 dataScienceToastmasters.Rmd
+ create mode 100644 dataScienceToastmasters.html
+ create mode 100644 datascience.jpg
+ create mode 100644 explore_felony.R
+ create mode 100644 howtoxar.Rmd
+ create mode 100644 imgs/.DS_Store
+ create mode 100644 imgs/DataScienceTriangle.jpg
+ create mode 100644 imgs/DataScienceTriangle.pdf
+ create mode 100644 imgs/DataScienceTriangleAnalogy.jpg
+ create mode 100644 imgs/DataScienceTriangleAnalogy.pdf
+ create mode 100644 imgs/Data_Outlook.jpg
+ create mode 100644 imgs/JuvenileIntakes-byRegion.png
+ create mode 100644 imgs/Jyoti - main_tcm25-13857.jpg
+ create mode 100644 imgs/Notes on Data 101.pdf
+ create mode 100644 imgs/Prescriptive_Analytics_process.png
+ create mode 100644 imgs/Rplot.pdf
+ create mode 100644 imgs/Rplot01.png
+ create mode 100644 imgs/Rplot02.png
+ create mode 100644 imgs/Screen Shot 2018-06-07 at 12.28.36 PM.png
+ create mode 100644 imgs/Social Good 600 v1.png
+ create mode 100755 imgs/SocialGood.png
+ create mode 100644 imgs/anyQuestionsDavidSPumpkins.gif
+ create mode 100644 imgs/bar_race_status.jpg
+ create mode 100644 imgs/boosting-algo-7.gif
+ create mode 100644 imgs/break.gif
+ create mode 100644 imgs/bro.gif
+ create mode 100644 imgs/cloudcomputing.png
+ create mode 100644 imgs/coffee.jpg
+ create mode 100644 imgs/dataScienceToastmasters.pdf
+ create mode 100644 imgs/data_driven.png
+ create mode 100644 imgs/excellentQuestion.gif
+ create mode 100644 imgs/fakeSheet.png
+ create mode 100644 imgs/giphy.mp4
+ create mode 100644 imgs/goals.gif
+ create mode 100644 imgs/hadley.jpg
+ create mode 100644 imgs/howdoyouusedata.gif
+ create mode 100644 imgs/lamadiss.gif
+ create mode 100644 imgs/ledger.jpg
+ create mode 100755 imgs/messy-data-makin-me-sad-.jpg
+ create mode 100644 imgs/pandemics.png
+ create mode 100644 imgs/problemsolving.jpg
+ create mode 100644 imgs/pyramnid.jpg
+ create mode 100644 imgs/rightTioRemainHugged.gif
+ create mode 100644 imgs/rstudio.png
+ create mode 100644 imgs/schoolHouseRock.gif
+ create mode 100644 imgs/shareifyouagree.jpg_large
+ create mode 100644 imgs/squadgoals.gif
+ create mode 100644 imgs/superimportantoutcome.png
+ create mode 100644 imgs/thanks.gif
+ create mode 100644 imgs/toomuch.gif
+ create mode 100644 imgs/unicorn.gif
+ create mode 100644 imgs/whereDoWeGo.gif
+ create mode 100644 imgs/why.gif
+ create mode 100644 libs/.DS_Store
+ create mode 100644 libs/kePrint-0.0.1/kePrint.js
+ create mode 100644 libs/kePrint/kePrint.js
+ create mode 100644 libs/remark-css/default-fonts.css
+ create mode 100644 libs/remark-css/default.css
+ create mode 100644 libs/remark-latest.min.js
+ create mode 100644 macros.js
+ create mode 100644 normal_distro_example.R
+ create mode 100644 normal_height.R
+ create mode 100644 notes_on_data.Rmd
+ create mode 100644 notes_on_data.pdf
+ create mode 100644 notes_on_data_files/figure-html/TrickQuestion_one-1.png
+ create mode 100644 notes_on_data_files/figure-html/TrickQuestion_two-1.png
+ create mode 100644 notes_on_data_files/figure-html/correct_viz-1.png
+ create mode 100644 notes_on_data_files/figure-html/side_by_side-1.png
+ create mode 100644 notes_on_data_files/figure-html/side_by_side-2.png
+ create mode 100644 notes_on_data_files/figure-html/trickquestionThree-1.png
+ create mode 100644 notes_on_data_files/highlightjs-9.12.0/default.css
+ create mode 100644 notes_on_data_files/highlightjs-9.12.0/highlight.js
+ create mode 100644 notes_on_data_files/highlightjs-9.12.0/textmate.css
+ create mode 100644 notes_on_data_files/kePrint-0.0.1/kePrint.js
+ create mode 100644 presentation.css
+ create mode 100644 pro_presentation.css
+ create mode 100644 slides_on_data.Rmd
+ create mode 100644 slides_on_data.html
+ create mode 100644 slides_on_data_files/figure-html/TrickQuestion_one-1.png
+ create mode 100644 slides_on_data_files/figure-html/TrickQuestion_two-1.png
+ create mode 100644 slides_on_data_files/figure-html/correct_viz-1.png
+ create mode 100644 slides_on_data_files/figure-html/side_by_side-1.png
+ create mode 100644 slides_on_data_files/figure-html/side_by_side-2.png
+ create mode 100644 slides_on_data_files/figure-html/trickquestionThree-1.png
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git remote add origin https://github.com/martin-gleason/data_literacy101.git
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push -u origin master
+Counting objects: 114, done.
+Delta compression using up to 8 threads.
+Compressing objects:   0% (1/108)   Compressing objects:   1% (2/108)   Compressing objects:   2% (3/108)   Compressing objects:   3% (4/108)   Compressing objects:   4% (5/108)   Compressing objects:   5% (6/108)   Compressing objects:   6% (7/108)   Compressing objects:   7% (8/108)   Compressing objects:   8% (9/108)   Compressing objects:   9% (10/108)   Compressing objects:  10% (11/108)   Compressing objects:  11% (12/108)   Compressing objects:  12% (13/108)   Compressing objects:  13% (15/108)   Compressing objects:  14% (16/108)   Compressing objects:  15% (17/108)   Compressing objects:  16% (18/108)   Compressing objects:  17% (19/108)   Compressing objects:  18% (20/108)   Compressing objects:  19% (21/108)   Compressing objects:  20% (22/108)   Compressing objects:  21% (23/108)   Compressing objects:  22% (24/108)   Compressing objects:  23% (25/108)   Compressing objects:  24% (26/108)   Compressing objects:  25% (27/108)   Compressing objects:  26% (29/108)   Compressing objects:  27% (30/108)   Compressing objects:  28% (31/108)   Compressing objects:  29% (32/108)   Compressing objects:  30% (33/108)   Compressing objects:  31% (34/108)   Compressing objects:  32% (35/108)   Compressing objects:  33% (36/108)   Compressing objects:  34% (37/108)   Compressing objects:  35% (38/108)   Compressing objects:  36% (39/108)   Compressing objects:  37% (40/108)   Compressing objects:  38% (42/108)   Compressing objects:  39% (43/108)   Compressing objects:  40% (44/108)   Compressing objects:  41% (45/108)   Compressing objects:  42% (46/108)   Compressing objects:  43% (47/108)   Compressing objects:  44% (48/108)   Compressing objects:  45% (49/108)   Compressing objects:  46% (50/108)   Compressing objects:  47% (51/108)   Compressing objects:  48% (52/108)   Compressing objects:  49% (53/108)   Compressing objects:  50% (54/108)   Compressing objects:  51% (56/108)   Compressing objects:  52% (57/108)   Compressing objects:  53% (58/108)   Compressing objects:  54% (59/108)   Compressing objects:  55% (60/108)   Compressing objects:  56% (61/108)   Compressing objects:  57% (62/108)   Compressing objects:  58% (63/108)   Compressing objects:  59% (64/108)   Compressing objects:  60% (65/108)   Compressing objects:  61% (66/108)   Compressing objects:  62% (67/108)   Compressing objects:  63% (69/108)   Compressing objects:  64% (70/108)   Compressing objects:  65% (71/108)   Compressing objects:  66% (72/108)   Compressing objects:  67% (73/108)   Compressing objects:  68% (74/108)   Compressing objects:  69% (75/108)   Compressing objects:  70% (76/108)   Compressing objects:  71% (77/108)   Compressing objects:  72% (78/108)   Compressing objects:  73% (79/108)   Compressing objects:  74% (80/108)   Compressing objects:  75% (81/108)   Compressing objects:  76% (83/108)   Compressing objects:  77% (84/108)   Compressing objects:  78% (85/108)   Compressing objects:  79% (86/108)   Compressing objects:  80% (87/108)   Compressing objects:  81% (88/108)   Compressing objects:  82% (89/108)   Compressing objects:  83% (90/108)   Compressing objects:  84% (91/108)   Compressing objects:  85% (92/108)   Compressing objects:  86% (93/108)   Compressing objects:  87% (94/108)   Compressing objects:  88% (96/108)   Compressing objects:  89% (97/108)   Compressing objects:  90% (98/108)   Compressing objects:  91% (99/108)   Compressing objects:  92% (100/108)   Compressing objects:  93% (101/108)   Compressing objects:  94% (102/108)   Compressing objects:  95% (103/108)   Compressing objects:  96% (104/108)   Compressing objects:  97% (105/108)   Compressing objects:  98% (106/108)   Compressing objects:  99% (107/108)   Compressing objects: 100% (108/108)   Compressing objects: 100% (108/108), done.
+Writing objects:   0% (1/114)   Writing objects:   1% (2/114)   Writing objects:   3% (4/114)   Writing objects:   4% (5/114)   Writing objects:   5% (6/114)   Writing objects:   6% (7/114)   Writing objects:   7% (8/114)   Writing objects:   8% (10/114)   Writing objects:   9% (11/114)   Writing objects:  10% (12/114)   Writing objects:  11% (13/114)   Writing objects:  12% (14/114)   Writing objects:  13% (15/114)   Writing objects:  14% (16/114)   Writing objects:  15% (18/114)   Writing objects:  16% (19/114)   Writing objects:  17% (20/114)   Writing objects:  18% (21/114)   Writing objects:  19% (22/114)   Writing objects:  20% (23/114)   Writing objects:  21% (24/114)   Writing objects:  22% (26/114)   Writing objects:  23% (27/114)   Writing objects:  24% (28/114)   Writing objects:  25% (29/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  26% (30/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  27% (31/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  28% (32/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  29% (34/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  30% (35/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  31% (36/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  32% (37/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  33% (38/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  34% (39/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  35% (40/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  36% (42/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  37% (43/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  38% (44/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  39% (45/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  40% (46/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  41% (47/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  42% (48/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  43% (50/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  44% (51/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  45% (52/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  46% (53/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  47% (54/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  48% (55/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  49% (56/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  50% (57/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  51% (59/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  52% (60/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  53% (61/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  54% (62/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  55% (63/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  56% (64/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  57% (65/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  58% (67/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  59% (68/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  60% (69/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  61% (70/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  62% (71/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  63% (72/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  64% (73/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  65% (75/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  66% (76/114), 35.55 MiB | 8.96 MiB/s   Writing objects:  67% (77/114), 35.55 MiB | 8.96 MiB/s   Writing objects:  68% (78/114), 35.55 MiB | 8.96 MiB/s   Writing objects:  69% (79/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  70% (80/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  71% (81/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  72% (83/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  73% (84/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  74% (85/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  75% (86/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  76% (87/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  77% (88/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  78% (89/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  79% (91/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  80% (92/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  81% (93/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  82% (94/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  83% (95/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  84% (96/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  85% (97/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  86% (99/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  87% (100/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  88% (101/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  89% (102/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  90% (103/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  92% (105/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  93% (107/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  94% (108/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  95% (109/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  96% (110/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  97% (111/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  98% (112/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  99% (113/114), 43.73 MiB | 9.73 MiB/s   Writing objects: 100% (114/114), 43.73 MiB | 9.73 MiB/s   Writing objects: 100% (114/114), 49.63 MiB | 10.07 MiB/s, done.
+Total 114 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), done.[K
+To https://github.com/martin-gleason/data_literacy101.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout -b gh-pages
+M	.Rproj.user/478E288A/console06/283ED16A
+Switched to a new branch 'gh-pages'
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ it [K[K[Kgit checkout p[Kgp[Khpage[K[K[K[K-pages
+M	.Rproj.user/478E288A/console06/283ED16A
+Already on 'gh-pages'
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push o[K[K[Kh origin gh-pges[K[K[Kages
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/martin-gleason/data_literacy101.git
+ * [new branch]      gh-pages -> gh-pages
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git branch
+[?1h=* [32mgh-pages[m[m
+  master[m[m
+[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git ls [K-remote
+From https://github.com/martin-gleason/data_literacy101.git
+6f3e0203f2a47311bf05bc583a40461a199cee1c	HEAD
+6f3e0203f2a47311bf05bc583a40461a199cee1c	refs/heads/gh-pages
+6f3e0203f2a47311bf05bc583a40461a199cee1c	refs/heads/master
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git bracn[K[Knch
+[?1h=* [32mgh-pages[m[m
+  master[m[m
+[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout master
+M	.Rproj.user/478E288A/console06/283ED16A
+M	.Rproj.user/478E288A/sources/prop/5B5F0E87
+M	.Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513
+M	.Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513-contents
+M	slides_on_data.Rmd
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git add .
