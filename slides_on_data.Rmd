@@ -22,6 +22,8 @@ library(plotly)
 library(xaringan)
 source("normal_height.R") 
 # figure out how to make sure it works on windows or mac
+# need to fix formating data
+# need to fix git
 
 ```
 class:center
@@ -30,9 +32,9 @@ class:center
 ---
 .center[#Training Ground Rules]
 
-*  Take care of your clients and cases  
+*  Take care of your clients and cases
 
-*  Two breaks are built in, but get up and go if you got to go
+*  Two breaks are built in, but get up and go if you need to
 
 *  Ask questions, even ones that seem obvious
 
@@ -61,10 +63,7 @@ class:center
 ---
 class: center
 # What Is Data? 
-![](imgs/howdoyouusedata.gif)
-
-
-
+.center[![](imgs/howdoyouusedata.gif)]
 
 .bottom[.center[What questions do you have about data?]]
 ---
@@ -89,7 +88,7 @@ Excercise 1: How do you use data?
 ---
 class: center
 # Sharing is Caring
-![](imgs/giphy.mp4)
+.center[![](imgs/giphy.mp4)]
 
 
 .center[Who wants to share how they use data?]
@@ -100,25 +99,25 @@ class: center
 .pull-left[.left[Data: 
 * Facts, figures, and other abstract representations of the world
   + Height
-  
+
   + Weight
-  
+
   + Number of Charges
-  
+
   + Length of Term of Probation]]
 
 .pull-right[.left[Information:
 * Data that has been processed, given structure, and context
   + Charts and graphs
-  
+
   + Risk Level
-  
+
       - Credit
-      
+
       - Probation
-      
+
   + Body Mass Index (BMI)
-  
+
       - [Far From Perfect Model](https://www.npr.org/templates/story/story.php?storyId=106268439)]]
 ---
 # How much data do we need?
@@ -157,7 +156,6 @@ class: center
 *  *Examples?*
 
 --
-
 .left[## Qualitative]
 *  *Examples?*
 --
@@ -181,9 +179,11 @@ class:center
 
 >  "Descriptive statistics are brief descriptive coefficients that summarize a given data set, which can be either a representation of the entire or sample population. Descriptive statistics are broken down into measures of central tendency and measures of variability (spread)."
 
+.right[[--Investopedia](https://www.investopedia.com/terms/d/descriptive_statistics.asp)]
 
 ---
 # Measures of Central Tendency and Variablity
+
 * Mean: Average
 --
 
@@ -229,7 +229,6 @@ bad_proof
 bad_height %>% kable() %>% kable_styling("striped", "bordered", full_width = TRUE)
 ```
 ---
-class:center
 ## Excercise 2: How did I mislead you?
 ```{r, side_by_side, include = TRUE, warning = FALSE, out.width="49%", fig.height = 15, fig.width = 15, fig.show = "hold", message = FALSE, echo = FALSE}
 total_height + theme(axis.text = element_text(family = "Nobile", size = 48 ),
@@ -245,7 +244,7 @@ total_height_bar + theme(axis.text = element_text(family = "Nobile", size = 48 )
 total_height_sex_histogram
 total_height_chart %>% kable(caption = "All Measurements in cm") %>% 
   kable_styling("striped", "bordered", full_width = FALSE)
-  
+
 ```
 ---
 class: center
@@ -253,6 +252,7 @@ background-image: url(imgs/break.gif)
 # Take a break
 ---
 .center[# The Training So Far]
+
 * Measures of Central Tendency.
 
 * Measures of Variance.
@@ -263,23 +263,23 @@ background-image: url(imgs/break.gif)
 # The Stastical Model
 
 * A representation of what the data tells us
+
 * The goal of:
-  
+
   + Big Data
- 
+
   + Machine Learning
- 
+
   + AI
-  
-  
+
 --
-.center[![:scale 55%](imgs/boosting-algo-7.gif)]
+.center[![:scale 53%](imgs/boosting-algo-7.gif)]
 ---
 # Four Kinds of Analytics
 
 * Descriptive: What?
     + Very similiar to descriptive statistics.
-    
+
 * Diagnostic: Why? 
 
 * Predictive: What if?
@@ -295,12 +295,12 @@ background-image: url(imgs/break.gif)
 * What could happen
 
   + Chances of winning an election
-  
+
   + Chances of developing an illness
-  
+
   + Chance at re-offending
-  
-  
+
+
 --
 
 .center[![:scale 60%](imgs/superimportantoutcome.png)]
@@ -360,7 +360,7 @@ background-image: url(imgs/break.gif)
     + Promise
 --
 
-    
+
 * Databases
 --
 
@@ -381,18 +381,18 @@ background-image: url(imgs/break.gif)
 * We use spreadsheets for:
 
   + Collection, cleaning, results, analysis
-  
+
   + Provide structure to our data
-  
+
   + Share data/information
-  
+
   + Data Analysis
 
 * In our office, we use Excel
   + Google Sheets
 
   + And, occassionally, tables in Word
-  
+
   + What should we use Spreadsheets for?
 ---
 class: center
