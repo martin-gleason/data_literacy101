@@ -63,7 +63,7 @@ class:center
 ---
 class: center
 # What Is Data? 
-![](imgs/howdoyouusedata.gif)
+.center[![](imgs/howdoyouusedata.gif)]
 
 .bottom[.center[What questions do you have about data?]]
 ---
