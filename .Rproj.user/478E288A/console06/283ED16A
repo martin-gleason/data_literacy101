@@ -1,301 +1,0 @@
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101[?1034hKnowhere:data_literacy101 marty$ git init
-Initialized empty Git repository in /Users/marty/Dropbox (Personal)/Coding Projects/R/data_literacy101/.git/
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git add .
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git commit - m [K[K[Km "First [K[K[K[K[K[KFirst commit in clean repo"
-[master (root-commit) 6f3e020] First commit in clean repo
- 99 files changed, 3096 insertions(+)
- create mode 100644 .DS_Store
- create mode 100644 .Rproj.user/478E288A/console06/283ED16A
- create mode 100644 .Rproj.user/478E288A/console06/INDEX001
- create mode 100644 .Rproj.user/478E288A/sources/prop/5B5F0E87
- create mode 100644 .Rproj.user/478E288A/sources/prop/INDEX
- create mode 100644 .Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513
- create mode 100644 .Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513-contents
- create mode 100644 .Rproj.user/478E288A/sources/s-A598D0F8/lock_file
- create mode 100644 .Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/478E288AA598D0F8/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/s/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
- create mode 100644 .Rproj.user/shared/notebooks/paths
- create mode 100644 DataScience for the Court 101.Rproj
- create mode 100644 Galton's_correlation_diagram_1875.jpg
- create mode 100644 cpd_data.R
- create mode 100644 dataScienceToastmasters.Rmd
- create mode 100644 dataScienceToastmasters.html
- create mode 100644 datascience.jpg
- create mode 100644 explore_felony.R
- create mode 100644 howtoxar.Rmd
- create mode 100644 imgs/.DS_Store
- create mode 100644 imgs/DataScienceTriangle.jpg
- create mode 100644 imgs/DataScienceTriangle.pdf
- create mode 100644 imgs/DataScienceTriangleAnalogy.jpg
- create mode 100644 imgs/DataScienceTriangleAnalogy.pdf
- create mode 100644 imgs/Data_Outlook.jpg
- create mode 100644 imgs/JuvenileIntakes-byRegion.png
- create mode 100644 imgs/Jyoti - main_tcm25-13857.jpg
- create mode 100644 imgs/Notes on Data 101.pdf
- create mode 100644 imgs/Prescriptive_Analytics_process.png
- create mode 100644 imgs/Rplot.pdf
- create mode 100644 imgs/Rplot01.png
- create mode 100644 imgs/Rplot02.png
- create mode 100644 imgs/Screen Shot 2018-06-07 at 12.28.36 PM.png
- create mode 100644 imgs/Social Good 600 v1.png
- create mode 100755 imgs/SocialGood.png
- create mode 100644 imgs/anyQuestionsDavidSPumpkins.gif
- create mode 100644 imgs/bar_race_status.jpg
- create mode 100644 imgs/boosting-algo-7.gif
- create mode 100644 imgs/break.gif
- create mode 100644 imgs/bro.gif
- create mode 100644 imgs/cloudcomputing.png
- create mode 100644 imgs/coffee.jpg
- create mode 100644 imgs/dataScienceToastmasters.pdf
- create mode 100644 imgs/data_driven.png
- create mode 100644 imgs/excellentQuestion.gif
- create mode 100644 imgs/fakeSheet.png
- create mode 100644 imgs/giphy.mp4
- create mode 100644 imgs/goals.gif
- create mode 100644 imgs/hadley.jpg
- create mode 100644 imgs/howdoyouusedata.gif
- create mode 100644 imgs/lamadiss.gif
- create mode 100644 imgs/ledger.jpg
- create mode 100755 imgs/messy-data-makin-me-sad-.jpg
- create mode 100644 imgs/pandemics.png
- create mode 100644 imgs/problemsolving.jpg
- create mode 100644 imgs/pyramnid.jpg
- create mode 100644 imgs/rightTioRemainHugged.gif
- create mode 100644 imgs/rstudio.png
- create mode 100644 imgs/schoolHouseRock.gif
- create mode 100644 imgs/shareifyouagree.jpg_large
- create mode 100644 imgs/squadgoals.gif
- create mode 100644 imgs/superimportantoutcome.png
- create mode 100644 imgs/thanks.gif
- create mode 100644 imgs/toomuch.gif
- create mode 100644 imgs/unicorn.gif
- create mode 100644 imgs/whereDoWeGo.gif
- create mode 100644 imgs/why.gif
- create mode 100644 libs/.DS_Store
- create mode 100644 libs/kePrint-0.0.1/kePrint.js
- create mode 100644 libs/kePrint/kePrint.js
- create mode 100644 libs/remark-css/default-fonts.css
- create mode 100644 libs/remark-css/default.css
- create mode 100644 libs/remark-latest.min.js
- create mode 100644 macros.js
- create mode 100644 normal_distro_example.R
- create mode 100644 normal_height.R
- create mode 100644 notes_on_data.Rmd
- create mode 100644 notes_on_data.pdf
- create mode 100644 notes_on_data_files/figure-html/TrickQuestion_one-1.png
- create mode 100644 notes_on_data_files/figure-html/TrickQuestion_two-1.png
- create mode 100644 notes_on_data_files/figure-html/correct_viz-1.png
- create mode 100644 notes_on_data_files/figure-html/side_by_side-1.png
- create mode 100644 notes_on_data_files/figure-html/side_by_side-2.png
- create mode 100644 notes_on_data_files/figure-html/trickquestionThree-1.png
- create mode 100644 notes_on_data_files/highlightjs-9.12.0/default.css
- create mode 100644 notes_on_data_files/highlightjs-9.12.0/highlight.js
- create mode 100644 notes_on_data_files/highlightjs-9.12.0/textmate.css
- create mode 100644 notes_on_data_files/kePrint-0.0.1/kePrint.js
- create mode 100644 presentation.css
- create mode 100644 pro_presentation.css
- create mode 100644 slides_on_data.Rmd
- create mode 100644 slides_on_data.html
- create mode 100644 slides_on_data_files/figure-html/TrickQuestion_one-1.png
- create mode 100644 slides_on_data_files/figure-html/TrickQuestion_two-1.png
- create mode 100644 slides_on_data_files/figure-html/correct_viz-1.png
- create mode 100644 slides_on_data_files/figure-html/side_by_side-1.png
- create mode 100644 slides_on_data_files/figure-html/side_by_side-2.png
- create mode 100644 slides_on_data_files/figure-html/trickquestionThree-1.png
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git remote add origin https://github.com/martin-gleason/data_literacy101.git
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push -u origin master
-Counting objects: 114, done.
-Delta compression using up to 8 threads.
-Compressing objects:   0% (1/108)   Compressing objects:   1% (2/108)   Compressing objects:   2% (3/108)   Compressing objects:   3% (4/108)   Compressing objects:   4% (5/108)   Compressing objects:   5% (6/108)   Compressing objects:   6% (7/108)   Compressing objects:   7% (8/108)   Compressing objects:   8% (9/108)   Compressing objects:   9% (10/108)   Compressing objects:  10% (11/108)   Compressing objects:  11% (12/108)   Compressing objects:  12% (13/108)   Compressing objects:  13% (15/108)   Compressing objects:  14% (16/108)   Compressing objects:  15% (17/108)   Compressing objects:  16% (18/108)   Compressing objects:  17% (19/108)   Compressing objects:  18% (20/108)   Compressing objects:  19% (21/108)   Compressing objects:  20% (22/108)   Compressing objects:  21% (23/108)   Compressing objects:  22% (24/108)   Compressing objects:  23% (25/108)   Compressing objects:  24% (26/108)   Compressing objects:  25% (27/108)   Compressing objects:  26% (29/108)   Compressing objects:  27% (30/108)   Compressing objects:  28% (31/108)   Compressing objects:  29% (32/108)   Compressing objects:  30% (33/108)   Compressing objects:  31% (34/108)   Compressing objects:  32% (35/108)   Compressing objects:  33% (36/108)   Compressing objects:  34% (37/108)   Compressing objects:  35% (38/108)   Compressing objects:  36% (39/108)   Compressing objects:  37% (40/108)   Compressing objects:  38% (42/108)   Compressing objects:  39% (43/108)   Compressing objects:  40% (44/108)   Compressing objects:  41% (45/108)   Compressing objects:  42% (46/108)   Compressing objects:  43% (47/108)   Compressing objects:  44% (48/108)   Compressing objects:  45% (49/108)   Compressing objects:  46% (50/108)   Compressing objects:  47% (51/108)   Compressing objects:  48% (52/108)   Compressing objects:  49% (53/108)   Compressing objects:  50% (54/108)   Compressing objects:  51% (56/108)   Compressing objects:  52% (57/108)   Compressing objects:  53% (58/108)   Compressing objects:  54% (59/108)   Compressing objects:  55% (60/108)   Compressing objects:  56% (61/108)   Compressing objects:  57% (62/108)   Compressing objects:  58% (63/108)   Compressing objects:  59% (64/108)   Compressing objects:  60% (65/108)   Compressing objects:  61% (66/108)   Compressing objects:  62% (67/108)   Compressing objects:  63% (69/108)   Compressing objects:  64% (70/108)   Compressing objects:  65% (71/108)   Compressing objects:  66% (72/108)   Compressing objects:  67% (73/108)   Compressing objects:  68% (74/108)   Compressing objects:  69% (75/108)   Compressing objects:  70% (76/108)   Compressing objects:  71% (77/108)   Compressing objects:  72% (78/108)   Compressing objects:  73% (79/108)   Compressing objects:  74% (80/108)   Compressing objects:  75% (81/108)   Compressing objects:  76% (83/108)   Compressing objects:  77% (84/108)   Compressing objects:  78% (85/108)   Compressing objects:  79% (86/108)   Compressing objects:  80% (87/108)   Compressing objects:  81% (88/108)   Compressing objects:  82% (89/108)   Compressing objects:  83% (90/108)   Compressing objects:  84% (91/108)   Compressing objects:  85% (92/108)   Compressing objects:  86% (93/108)   Compressing objects:  87% (94/108)   Compressing objects:  88% (96/108)   Compressing objects:  89% (97/108)   Compressing objects:  90% (98/108)   Compressing objects:  91% (99/108)   Compressing objects:  92% (100/108)   Compressing objects:  93% (101/108)   Compressing objects:  94% (102/108)   Compressing objects:  95% (103/108)   Compressing objects:  96% (104/108)   Compressing objects:  97% (105/108)   Compressing objects:  98% (106/108)   Compressing objects:  99% (107/108)   Compressing objects: 100% (108/108)   Compressing objects: 100% (108/108), done.
-Writing objects:   0% (1/114)   Writing objects:   1% (2/114)   Writing objects:   3% (4/114)   Writing objects:   4% (5/114)   Writing objects:   5% (6/114)   Writing objects:   6% (7/114)   Writing objects:   7% (8/114)   Writing objects:   8% (10/114)   Writing objects:   9% (11/114)   Writing objects:  10% (12/114)   Writing objects:  11% (13/114)   Writing objects:  12% (14/114)   Writing objects:  13% (15/114)   Writing objects:  14% (16/114)   Writing objects:  15% (18/114)   Writing objects:  16% (19/114)   Writing objects:  17% (20/114)   Writing objects:  18% (21/114)   Writing objects:  19% (22/114)   Writing objects:  20% (23/114)   Writing objects:  21% (24/114)   Writing objects:  22% (26/114)   Writing objects:  23% (27/114)   Writing objects:  24% (28/114)   Writing objects:  25% (29/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  26% (30/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  27% (31/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  28% (32/114), 1.07 MiB | 1.35 MiB/s   Writing objects:  29% (34/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  30% (35/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  31% (36/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  32% (37/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  33% (38/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  34% (39/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  35% (40/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  36% (42/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  37% (43/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  38% (44/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  39% (45/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  40% (46/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  41% (47/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  42% (48/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  43% (50/114), 5.54 MiB | 4.11 MiB/s   Writing objects:  44% (51/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  45% (52/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  46% (53/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  47% (54/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  48% (55/114), 10.97 MiB | 5.78 MiB/s   Writing objects:  49% (56/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  50% (57/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  51% (59/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  52% (60/114), 16.91 MiB | 7.01 MiB/s   Writing objects:  53% (61/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  54% (62/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  55% (63/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  56% (64/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  57% (65/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  58% (67/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  59% (68/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  60% (69/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  61% (70/114), 21.98 MiB | 7.55 MiB/s   Writing objects:  62% (71/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  63% (72/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  64% (73/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  65% (75/114), 29.96 MiB | 8.65 MiB/s   Writing objects:  66% (76/114), 35.55 MiB | 8.96 MiB/s   Writing objects:  67% (77/114), 35.55 MiB | 8.96 MiB/s   Writing objects:  68% (78/114), 35.55 MiB | 8.96 MiB/s   Writing objects:  69% (79/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  70% (80/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  71% (81/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  72% (83/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  73% (84/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  74% (85/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  75% (86/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  76% (87/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  77% (88/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  78% (89/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  79% (91/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  80% (92/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  81% (93/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  82% (94/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  83% (95/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  84% (96/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  85% (97/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  86% (99/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  87% (100/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  88% (101/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  89% (102/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  90% (103/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  92% (105/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  93% (107/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  94% (108/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  95% (109/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  96% (110/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  97% (111/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  98% (112/114), 43.73 MiB | 9.73 MiB/s   Writing objects:  99% (113/114), 43.73 MiB | 9.73 MiB/s   Writing objects: 100% (114/114), 43.73 MiB | 9.73 MiB/s   Writing objects: 100% (114/114), 49.63 MiB | 10.07 MiB/s, done.
-Total 114 (delta 3), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), done.[K
-To https://github.com/martin-gleason/data_literacy101.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout -b gh-pages
-M	.Rproj.user/478E288A/console06/283ED16A
-Switched to a new branch 'gh-pages'
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ it [K[K[Kgit checkout p[Kgp[Khpage[K[K[K[K-pages
-M	.Rproj.user/478E288A/console06/283ED16A
-Already on 'gh-pages'
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push o[K[K[Kh origin gh-pges[K[K[Kages
-Total 0 (delta 0), reused 0 (delta 0)
-To https://github.com/martin-gleason/data_literacy101.git
- * [new branch]      gh-pages -> gh-pages
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git branch
-[?1h=* [32mgh-pages[m[m
-  master[m[m
-[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git ls [K-remote
-From https://github.com/martin-gleason/data_literacy101.git
-6f3e0203f2a47311bf05bc583a40461a199cee1c	HEAD
-6f3e0203f2a47311bf05bc583a40461a199cee1c	refs/heads/gh-pages
-6f3e0203f2a47311bf05bc583a40461a199cee1c	refs/heads/master
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git bracn[K[Knch
-[?1h=* [32mgh-pages[m[m
-  master[m[m
-[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout master
-M	.Rproj.user/478E288A/console06/283ED16A
-M	.Rproj.user/478E288A/sources/prop/5B5F0E87
-M	.Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513
-M	.Rproj.user/478E288A/sources/s-A598D0F8/4E5B6513-contents
-M	slides_on_data.Rmd
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git add .
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git commm[Kit -m "Fixe=[K[K[K[K[KReove [K[K[K[Kmove ) from email address)[K"
-[master 72ebaed] Remove ) from email address
- 6 files changed, 230 insertions(+), 9 deletions(-)
- create mode 100644 .Rproj.user/478E288A/console06/283ED16A.env
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git committ[K[K[K[K[K[K[Kpush origin master
-Counting objects: 13, done.
-Delta compression using up to 8 threads.
-Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
-Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 5.37 KiB | 5.37 MiB/s, done.
-Total 13 (delta 3), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
-To https://github.com/martin-gleason/data_literacy101.git
-   6f3e020..72ebaed  master -> master
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ checkout -b gh-oage[K[K[K[Kpages
-bash: checkout: command not found
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout -b go[Kh [K-o[Kpages
-fatal: A branch named 'gh-pages' already exists.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout ch[K[Kgh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ commi[K[K[K[K[Kgit add a[K.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git committ :[K"address save eo[Kro[Kror?[K"[1P[C[1@ [1@-[1@m[C[1@ 
-[master a7f7ade] address save error
- 1 file changed, 24 insertions(+), 1 deletion(-)
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push origin master
-Counting objects: 6, done.
-Delta compression using up to 8 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.20 KiB | 1.20 MiB/s, done.
-Total 6 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
-To https://github.com/martin-gleason/data_literacy101.git
-   72ebaed..a7f7ade  master -> master
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ gitc[K checkout gp[Kh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-git chec[K[K[K[Kbrnc[K[Kanches -ls
-git: 'branches' is not a git command. See 'git --help'.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git branches
-git: 'branches' is not a git command. See 'git --help'.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git branch
-[?1h=  gh-pages[m[m
-* [32mmaster[m[m
-[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git chek[Kckout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-	.Rproj.user/478E288A/sources/prop/5B5F0E87
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ Saved working directory and index state WIP on master: 04446b1 "Gui commit"
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git comm[K[K[K[Kadd .
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git committ[K "add rpj[K[K[K[K s83[K[K[K283ed16a
-> 
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push origin master
-Everything up-to-date
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git sa[Ktash help
-usage: git stash list [<options>]
-   or: git stash show [<stash>]
-   or: git stash drop [-q|--quiet] [<stash>]
-   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
-   or: git stash branch <branchname> [<stash>]
-   or: git stash save [--patch] [-k|--[no-]keep-index] [-q|--quiet]
-		      [-u|--include-untracked] [-a|--all] [<message>]
-   or: git stash [push [--patch] [-k|--[no-]keep-index] [-q|--quiet]
-		       [-u|--include-untracked] [-a|--all] [-m <message>]
-		       [-- <pathspec>...]]
-   or: git stash clear
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ gith[K stat liost
-git: 'stat' is not a git command. See 'git --help'.
-
-The most similar commands are
-	status
-	stage
-	stash
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git stat[Ksh list
-[?1h=stash@{0}: WIP on master: 04446b1 "Gui commit"[m
-[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git stash push origin master
-error: pathspec 'origin' did not match any file(s) known to git.
-error: pathspec 'master' did not match any file(s) known to git.
-Did you forget to 'git add'?
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git dd[K[Kadd ous[K[K[Kstats pu[K[K[K[K[Ksh push origin master
-fatal: pathspec 'stash' did not match any files
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git chekout g[K[K[K[K[K[Kckhout ghp[K-pages
-git: 'checkhout' is not a git command. See 'git --help'.
-
-The most similar command is
-	checkout
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkhout gh-pages[1P
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ ch[K[Kchek[Kckout gh-pages
-bash: checkout: command not found
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git ta[K[Kstash list
-[?1h=stash@{0}: WIP on master: 04446b1 "Gui commit"[m
-[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git pull
-Already up to date.
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ cco[K[Kommit git [K[K[K[K[K[K[K[K[K[K[Kgit commit -m "adding to git-ignore"
-[master 068aaea] adding to git-ignore
- 3 files changed, 14 insertions(+), 1 deletion(-)
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push origin master
-Counting objects: 22, done.
-Delta compression using up to 8 threads.
-Compressing objects:   5% (1/20)   Compressing objects:  10% (2/20)   Compressing objects:  15% (3/20)   Compressing objects:  20% (4/20)   Compressing objects:  25% (5/20)   Compressing objects:  30% (6/20)   Compressing objects:  35% (7/20)   Compressing objects:  40% (8/20)   Compressing objects:  45% (9/20)   Compressing objects:  50% (10/20)   Compressing objects:  55% (11/20)   Compressing objects:  60% (12/20)   Compressing objects:  65% (13/20)   Compressing objects:  70% (14/20)   Compressing objects:  75% (15/20)   Compressing objects:  80% (16/20)   Compressing objects:  85% (17/20)   Compressing objects:  90% (18/20)   Compressing objects:  95% (19/20)   Compressing objects: 100% (20/20)   Compressing objects: 100% (20/20), done.
-Writing objects:   4% (1/22)   Writing objects:   9% (2/22)   Writing objects:  13% (3/22)   Writing objects:  18% (4/22)   Writing objects:  22% (5/22)   Writing objects:  27% (6/22)   Writing objects:  31% (7/22)   Writing objects:  36% (8/22)   Writing objects:  40% (9/22)   Writing objects:  45% (10/22)   Writing objects:  50% (11/22)   Writing objects:  54% (12/22)   Writing objects:  59% (13/22)   Writing objects:  63% (14/22)   Writing objects:  68% (15/22)   Writing objects:  72% (16/22)   Writing objects:  77% (17/22)   Writing objects:  81% (18/22)   Writing objects:  86% (19/22)   Writing objects:  90% (20/22)   Writing objects:  95% (21/22)   Writing objects: 100% (22/22)   Writing objects: 100% (22/22), 2.46 KiB | 148.00 KiB/s, done.
-Total 22 (delta 6), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 2 local objects.[K
-gTo https://github.com/martin-gleason/data_literacy101.git
-   d004a03..068aaea  master -> master
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ gitch [K[K[K checkout gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ chc[K[K[Kgit[K[K[Kgit checkoupt gh[K[K[K[K[Kt gh-pages
-error: Your local changes to the following files would be overwritten by checkout:
-	.Rproj.user/478E288A/console06/283ED16A
-Please commit your changes or stash them before you switch branches.
-Aborting
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
-]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
