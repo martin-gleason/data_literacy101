@@ -262,4 +262,16 @@ error: Your local changes to the following files would be overwritten by checkou
 	.Rproj.user/478E288A/console06/283ED16A
 Please commit your changes or stash them before you switch branches.
 Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ ch[K[Kchek[Kckout gh-pages
+bash: checkout: command not found
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git checkout gh-pages
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/478E288A/console06/283ED16A
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git ta[K[Kstash list
+[?1h=stash@{0}: WIP on master: 04446b1 "Gui commit"[m
+[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git pull
+Already up to date.
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
