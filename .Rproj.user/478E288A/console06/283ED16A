@@ -291,4 +291,11 @@ error: Your local changes to the following files would be overwritten by checkou
 	.Rproj.user/478E288A/console06/283ED16A
 Please commit your changes or stash them before you switch branches.
 Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ chc[K[K[Kgit[K[K[Kgit checkoupt gh[K[K[K[K[Kt gh-pages
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/478E288A/console06/283ED16A
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
