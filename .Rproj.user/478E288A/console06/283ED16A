@@ -274,4 +274,21 @@ Aborting
 [K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git pull
 Already up to date.
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ cco[K[Kommit git [K[K[K[K[K[K[K[K[K[K[Kgit commit -m "adding to git-ignore"
+[master 068aaea] adding to git-ignore
+ 3 files changed, 14 insertions(+), 1 deletion(-)
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git push origin master
+Counting objects: 22, done.
+Delta compression using up to 8 threads.
+Compressing objects:   5% (1/20)   Compressing objects:  10% (2/20)   Compressing objects:  15% (3/20)   Compressing objects:  20% (4/20)   Compressing objects:  25% (5/20)   Compressing objects:  30% (6/20)   Compressing objects:  35% (7/20)   Compressing objects:  40% (8/20)   Compressing objects:  45% (9/20)   Compressing objects:  50% (10/20)   Compressing objects:  55% (11/20)   Compressing objects:  60% (12/20)   Compressing objects:  65% (13/20)   Compressing objects:  70% (14/20)   Compressing objects:  75% (15/20)   Compressing objects:  80% (16/20)   Compressing objects:  85% (17/20)   Compressing objects:  90% (18/20)   Compressing objects:  95% (19/20)   Compressing objects: 100% (20/20)   Compressing objects: 100% (20/20), done.
+Writing objects:   4% (1/22)   Writing objects:   9% (2/22)   Writing objects:  13% (3/22)   Writing objects:  18% (4/22)   Writing objects:  22% (5/22)   Writing objects:  27% (6/22)   Writing objects:  31% (7/22)   Writing objects:  36% (8/22)   Writing objects:  40% (9/22)   Writing objects:  45% (10/22)   Writing objects:  50% (11/22)   Writing objects:  54% (12/22)   Writing objects:  59% (13/22)   Writing objects:  63% (14/22)   Writing objects:  68% (15/22)   Writing objects:  72% (16/22)   Writing objects:  77% (17/22)   Writing objects:  81% (18/22)   Writing objects:  86% (19/22)   Writing objects:  90% (20/22)   Writing objects:  95% (21/22)   Writing objects: 100% (22/22)   Writing objects: 100% (22/22), 2.46 KiB | 148.00 KiB/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 2 local objects.[K
+gTo https://github.com/martin-gleason/data_literacy101.git
+   d004a03..068aaea  master -> master
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ gitch [K[K[K checkout gh-pages
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/478E288A/console06/283ED16A
+Please commit your changes or stash them before you switch branches.
+Aborting
 ]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
