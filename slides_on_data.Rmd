@@ -30,9 +30,9 @@ class:center
 ---
 .center[#Training Ground Rules]
 
-*  Take care of your clients and cases  
+*  Take care of your clients and cases
 
-*  Two breaks are built in, but get up and go if you got to go
+*  Two breaks are built in, but get up and go if you need to
 
 *  Ask questions, even ones that seem obvious
 
@@ -157,7 +157,6 @@ class: center
 *  *Examples?*
 
 --
-
 .left[## Qualitative]
 *  *Examples?*
 --
@@ -181,9 +180,11 @@ class:center
 
 >  "Descriptive statistics are brief descriptive coefficients that summarize a given data set, which can be either a representation of the entire or sample population. Descriptive statistics are broken down into measures of central tendency and measures of variability (spread)."
 
+.right[[--Investopedia](https://www.investopedia.com/terms/d/descriptive_statistics.asp)]
 
 ---
 # Measures of Central Tendency and Variablity
+
 * Mean: Average
 --
 
@@ -229,7 +230,6 @@ bad_proof
 bad_height %>% kable() %>% kable_styling("striped", "bordered", full_width = TRUE)
 ```
 ---
-class:center
 ## Excercise 2: How did I mislead you?
 ```{r, side_by_side, include = TRUE, warning = FALSE, out.width="49%", fig.height = 15, fig.width = 15, fig.show = "hold", message = FALSE, echo = FALSE}
 total_height + theme(axis.text = element_text(family = "Nobile", size = 48 ),
@@ -253,6 +253,7 @@ background-image: url(imgs/break.gif)
 # Take a break
 ---
 .center[# The Training So Far]
+
 * Measures of Central Tendency.
 
 * Measures of Variance.
@@ -263,6 +264,7 @@ background-image: url(imgs/break.gif)
 # The Stastical Model
 
 * A representation of what the data tells us
+
 * The goal of:
   
   + Big Data
@@ -271,8 +273,8 @@ background-image: url(imgs/break.gif)
  
   + AI
   
-  
 --
+
 .center[![:scale 55%](imgs/boosting-algo-7.gif)]
 ---
 # Four Kinds of Analytics
@@ -360,7 +362,7 @@ background-image: url(imgs/break.gif)
     + Promise
 --
 
-    
+
 * Databases
 --
 
