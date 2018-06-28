@@ -91,7 +91,7 @@ Excercise 1: How do you use data?
 ---
 class: center
 # Sharing is Caring
-![](imgs/giphy.mp4)
+.center[![](imgs/giphy.mp4)]
 
 
 .center[Who wants to share how they use data?]
@@ -277,7 +277,7 @@ background-image: url(imgs/break.gif)
   
 --
 
-.center[![:scale 55%](imgs/boosting-algo-7.gif)]
+.center[![:scale 53%](imgs/boosting-algo-7.gif)]
 ---
 # Four Kinds of Analytics
 
