@@ -22,26 +22,26 @@ bad_height <- height %>% summarize("Average Height" = mean(height),
                      "Standard Deviation, in Centimeters" = sd(height))
 
 
-total_height <- height %>% 
-  ggplot(aes(x = height)) + 
-  geom_density(fill = "#a5d3c1") + 
+total_height <- height %>%
+  ggplot(aes(x = height)) +
+  geom_density(fill = "#a5d3c1") +
   labs(x = "Height in Centimeters", y = "Probability Distribution")+
   theme(axis.text = element_text(family = "Nobile", size = 18 ),
         axis.title = element_text(family = "Nobile", size = 17 ))
 
 
-bad_proof <- total_height + 
-  geom_area(data = subset(df_height_den, x >= height_quants$q5 & x <= height_quants$q95), 
-            aes(x = x, y = y), fill = "#9b9292") + 
+bad_proof <- total_height +
+  geom_area(data = subset(df_height_den, x >= height_quants$q5 & x <= height_quants$q95),
+            aes(x = x, y = y), fill = "#9b9292") +
   geom_vline(aes(xintercept = height_quants$median, color = "Median"), size = 1.5) +
   geom_vline(aes(xintercept = mean(height), color = "Mean"), size = 1.5) +
     scale_color_manual(name = "Descriptive Statistics", values = c(Median = "red", Mean = "#eebf48")) +
   theme(axis.text = element_text(family = "Nobile", size = 18 ),
         axis.title = element_text(family = "Nobile", size = 17 ))
-    
 
 
-total_height_bar <- height %>% group_by(sex) %>% 
+
+total_height_bar <- height %>% group_by(sex) %>%
   ggplot(aes(x = height)) + geom_bar(stat = "count", fill = "#a5d3c1", col = "black") +
   labs(x = "Height in Centimeters", y = "Total at that Height")+
   theme(axis.text = element_text(family = "Nobile", size = 18 ),
@@ -56,10 +56,10 @@ total_height_chart <- height %>% group_by(sex) %>%
             "Count" = n(),
             "Standard Deviation" = sd(height))
 
-total_height_sex_histogram <- height %>% 
-  group_by(sex) %>% 
-  ggplot(aes(x = height, fill = sex)) + geom_histogram( aes(y = ..density..), col = "black", position = "dodge") +
-  labs(x = "Height in Centimeters", y = "Total at that Height", caption = paste("Data from: " , cite))+
+total_height_sex_histogram <- height %>%
+  group_by(sex) %>%
+  ggplot(aes(x = height, fill = sex)) + geom_histogram( aes(y = ..density..), col = "black", position = "dodge")+
+  labs(x = "Height in Centimeters", y = "Total at that Height", caption = paste("Data from: " , cite), fill = "Sex")+
   theme(axis.text = element_text(family = "Nobile", size = 18 ),
         axis.title = element_text(family = "Nobile", size = 17 ))
 
@@ -79,7 +79,7 @@ height_men_hist + stat_function(fun = dnorm,
                                lwd = 1)
 
 height_women_hist <- height_women %>%
-  ggplot(aes(x = height, fill = sex)) + geom_histogram(aes(y = ..density..), fill = "#990000", col = "black") + 
+  ggplot(aes(x = height, fill = sex)) + geom_histogram(aes(y = ..density..), fill = "#990000", col = "black") +
   labs(x = "Height in Centimeters", y = "Total at that Height", caption = paste("Data from: " , cite))+
   theme(axis.text = element_text(family = "Nobile", size = 18 ),
         axis.title = element_text(family = "Nobile", size = 17 ))
@@ -88,9 +88,8 @@ height_women_hist <- height_women %>%
 height_women_hist + stat_function(fun = dnorm,
                                    args = list(mean = mean(height_women$height), sd(height_women$height)),
                                    col = "black",
-                                   lwd = 1) + 
+                                   lwd = 1) +
   labs(y = "Probability Distribution")
 
 prob_57 <- pnorm(57, mean = mean(height_women$height), sd = sd(height_women$height))
 prob_164 <- pnorm(164, mean = mean(height_women$height), sd = sd(height_women$height))
-                                                        

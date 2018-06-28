@@ -54,8 +54,8 @@ class:center
 
 *  To discover what you want to learn next
 ---
-.center[# Expectations
-![](imgs/schoolHouseRock.gif)]
+.center[# Expectations]
+.center[![](imgs/schoolHouseRock.gif)]
 
 
 .bottom[.center[What do **you** want to learn today?]]
@@ -87,7 +87,7 @@ Excercise 1: How do you use data?
 ---
 class: center
 # Sharing is Caring
-.center[![(imgs/giphy.gif)]]
+.center[![](imgs/sharingiscaring.jpg)]
 
 
 .center[Who wants to share how they use data?]
@@ -123,11 +123,11 @@ class: center
 --
 
 
-*  Pros and cons of Personal Experience
+* Pros and cons of Personal Experience
 --
 
 
-*  Professional/Clinical Judgement
+* Professional/Clinical Judgement
 --
 
 
@@ -135,7 +135,7 @@ class: center
 --
  
  
-* **Therefore, a better question is: What data do we need?**    
+* **A better question is: What data do we need?**    
 
 
 .center[![](imgs/toomuch.gif)]
@@ -147,15 +147,16 @@ class: center
 ##Think of data and information as a new language that requires fluency
 ---
 # Types of Data
---
-.left[## Quantitative]
+
+.pull-left[## Quantitative
+
 *  Discrete: only specific values matter for that data
+
 *  Continuous: All values
-*  *Examples?*
---
-.left[## Qualitative]
-*  *Examples?*
---
+
+*  *Examples?*]
+
+.pull-right[## Qualitative
 
 *  Binary: Yes/No
 
@@ -164,6 +165,8 @@ class: center
 *  Ordinal: Scores or Ranks
 
 *  Count/Ratio: Items per Area/Volume
+
+*  *Examples?*]
 ---
 class: center
 background-image: url(imgs/coffee.jpg)
@@ -180,6 +183,7 @@ class:center
 
 ---
 # Measures of Central Tendency and Variablity
+
 
 * Mean: Average
 --
@@ -236,9 +240,15 @@ total_height_bar + theme(axis.text = element_text(family = "Nobile", size = 48 )
 ```
 ---
 ## Correct Way to Visualize
-```{r, correct_viz, include = TRUE, echo = FALSE, out.width="50%", message = FALSE, fig.align='center', fig.height = 4, fig.width = 6, message = FALSE}
+```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 4, fig.width = 10, message = FALSE}
 
-total_height_sex_histogram
+total_height_sex_histogram +
+    theme(panel.spacing = unit(5, "lines"))+
+  facet_grid(~ sex)+
+  theme(axis.text = element_text(family = "Nobile", size = 20 ),
+        axis.title = element_text(family = "Nobile", size = 20 ),
+        legend.text = element_text(family = "Nobile", size = 20),
+        legend.title = element_text(family = "Nobile", size = 20))
 total_height_chart %>% kable(caption = "All Measurements in cm") %>% 
   kable_styling("striped", "bordered", full_width = FALSE)
 

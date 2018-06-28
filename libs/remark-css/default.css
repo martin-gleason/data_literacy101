@@ -1,6 +1,6 @@
 a, a > code {
-  color: rgb(249, 38, 114);
-  text-decoration: none;
+  color: #193993;
+  text-decoration: underline;
 }
 .footnote {
   position: absolute;
