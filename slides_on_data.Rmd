@@ -22,6 +22,8 @@ library(plotly)
 library(xaringan)
 source("normal_height.R") 
 # figure out how to make sure it works on windows or mac
+# need to fix formating data
+# need to fix git
 
 ```
 class:center
