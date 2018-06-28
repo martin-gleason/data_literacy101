@@ -1,0 +1,80 @@
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101[?1034hKnowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ git psuh[K[K[Kush -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ ch[K[Kcheckout mas[K[Kgi[K[K[K[K[K[K[K[K[K[K[K[Kgit checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/478E288A/console06/INDEX001
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git merge gph[K[Kh-pages mster[K[K[Kas[K[Kas[K[K[Kaster
+error: Your local changes to the following files would be overwritten by merge:
+	.Rproj.user/478E288A/console06/INDEX001
+Please commit your changes or stash them before you merge.
+Aborting
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git commit -m "console 06inxex again"
+On branch gh-pages
+Changes not staged for commit:
+	[31mdeleted:    .Rproj.user/478E288A/console06/283ED16A[m
+	[31mdeleted:    .Rproj.user/478E288A/console06/283ED16A.env[m
+	[31mmodified:   .Rproj.user/478E288A/console06/INDEX001[m
+
+no changes added to commit
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git commit -m "console 06inxex again"
+[gh-pages 3c06017] console 06inxex again
+ 3 files changed, 1 insertion(+), 218 deletions(-)
+ delete mode 100644 .Rproj.user/478E288A/console06/283ED16A
+ delete mode 100644 .Rproj.user/478E288A/console06/283ED16A.env
+ rewrite .Rproj.user/478E288A/console06/INDEX001 (100%)
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git commit -m "console 06inxex again"[12Pmerge gh-pages master
+Auto-merging .Rproj.user/478E288A/sources/prop/INDEX
+CONFLICT (content): Merge conflict in .Rproj.user/478E288A/sources/prop/INDEX
+Auto-merging .Rproj.user/478E288A/sources/prop/5B5F0E87
+CONFLICT (content): Merge conflict in .Rproj.user/478E288A/sources/prop/5B5F0E87
+Auto-merging .Rproj.user/478E288A/console06/INDEX001
+CONFLICT (content): Merge conflict in .Rproj.user/478E288A/console06/INDEX001
+CONFLICT (modify/delete): .Rproj.user/478E288A/console06/283ED16A deleted in HEAD and modified in master. Version master of .Rproj.user/478E288A/console06/283ED16A left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ git r [Kemoe -[K[K[Kte -v
+origin	https://github.com/martin-gleason/data_literacy101.git (fetch)
+origin	https://github.com/martin-gleason/data_literacy101.git (push)
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ [KKnowhere:data_literacy101 marty$ git brach[K[Knch -vv
+[?1h=* [32mgh-pages[m 3c06017 console 06inxex again[m
+  master  [m 2b9f60b [[34morigin/master[m] "300"[m
+[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git branch 0-vv[K[K[K[K-vv
+[?1h=* [32mgh-pages[m 3c06017 console 06inxex again[m
+  master  [m 2b9f60b [[34morigin/master[m] "300"[m
+[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git branch -r
+[?1h=  [31morigin/gh-pages[m[m
+  [31morigin/master[m[m
+[K[?1l>]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ git rm -r--[K[K --cahced[K[K[K[Kched .Rproj.user
+.Rproj.user/478E288A/console06/283ED16A: needs merge
+.Rproj.user/478E288A/console06/INDEX001: needs merge
+.Rproj.user/478E288A/sources/prop/5B5F0E87: needs merge
+.Rproj.user/478E288A/sources/prop/INDEX: needs merge
+rm '.Rproj.user/478E288A/build_options'
+rm '.Rproj.user/478E288A/console06/283ED16A'
+rm '.Rproj.user/478E288A/console06/283ED16A'
+rm '.Rproj.user/478E288A/console06/283ED16A.env'
+rm '.Rproj.user/478E288A/console06/INDEX001'
+rm '.Rproj.user/478E288A/console06/INDEX001'
+rm '.Rproj.user/478E288A/console06/INDEX001'
+rm '.Rproj.user/478E288A/pcs/files-pane.pper'
+rm '.Rproj.user/478E288A/pcs/source-pane.pper'
+rm '.Rproj.user/478E288A/pcs/windowlayoutstate.pper'
+rm '.Rproj.user/478E288A/pcs/workbench-pane.pper'
+rm '.Rproj.user/478E288A/rmd-outputs'
+rm '.Rproj.user/478E288A/saved_source_markers'
+rm '.Rproj.user/478E288A/sources/prop/10465238'
+rm '.Rproj.user/478E288A/sources/prop/2408A640'
+rm '.Rproj.user/478E288A/sources/prop/5B5F0E87'
+rm '.Rproj.user/478E288A/sources/prop/5B5F0E87'
+rm '.Rproj.user/478E288A/sources/prop/5B5F0E87'
+rm '.Rproj.user/478E288A/sources/prop/INDEX'
+rm '.Rproj.user/478E288A/sources/prop/INDEX'
+rm '.Rproj.user/478E288A/sources/prop/INDEX'
+rm '.Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/478E288A388F524E/chunks.json'
+rm '.Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/478E288AA598D0F8/chunks.json'
+rm '.Rproj.user/shared/notebooks/190D21A8-slides_on_data/1/s/chunks.json'
+rm '.Rproj.user/shared/notebooks/patch-chunk-names'
+rm '.Rproj.user/shared/notebooks/paths'
+]0;~/Dropbox (Personal)/Coding Projects/R/data_literacy101Knowhere:data_literacy101 marty$ 
