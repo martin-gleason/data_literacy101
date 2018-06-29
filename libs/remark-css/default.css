@@ -1,9 +1,24 @@
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Nobile|Spectral|Lato');
+</style type>
+
 a, a > code {
   color: #193993;
   text-decoration: underline;
 }
 
+.remark-container{
+	background-color: #eebf48;
+}
 
+.remark-slide-content{
+	font-size: 1.15em;
+
+}
+
+.title-slide{
+	background-color: #9b9292;
+	}
 
 
 .footnote {
@@ -12,6 +27,7 @@ a, a > code {
   padding-right: 4em;
   font-size: 90%;
 }
+
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
@@ -20,13 +36,11 @@ a, a > code {
   text-shadow: 0 0 20px #333;
 }
 
-.remark-container{
-	background-color: #a5d3c1;
-	}
 
 .inverse h1, .inverse h2, .inverse h3 {
   color: #f3f3f3;
 }
+
 /* Two-column layout */
 .left-column {
   width: 45%;
@@ -77,4 +91,38 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
     top: 0 !important;
     left: 0 !important;
   }
+}
+
+h1{
+	font-family: Lato, sans-serif;
+	color: #193993;
+	font-size: 1.9em;
+	text-align: center;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h2{
+	font-family: Lato, sans-serif;
+	color:   #193993;
+	font-size: 1.75em;
+	font-style: italic;
+	text-align: center;
+		text-rendering: optimizelegibility !important;
+
+}
+
+h3{
+font-family: Lato, sans-serif;
+	color: #193993; 
+	font-style: italic;
+	text-align: center;
+	font-size: 1.5em;
+		text-rendering: optimizelegibility !important;
+
+}
+
+ul,ol,dl,p{
+	font-family: 'Nobile', sans-serif;
+	text-align: left;
 }

@@ -14,51 +14,47 @@
 }
 */
 
-.remark-slide-content{
-	background-color: #9b9292;
-}
 
+.title-slide{
+	background-color: #9b9292;
+	}
 
 
 h1{
 	font-family: Lato, sans-serif;
 	color: #193993;
-	font-size: 2.2em;
+	font-size: 1.9em;
 	text-align: center;
-	text-rendering: optimizelegibility !important;
+		text-rendering: optimizelegibility !important;
 
 }
 
 h2{
 	font-family: Lato, sans-serif;
 	color:   #193993;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	font-style: italic;
 	text-align: center;
-	text-rendering: optimizelegibility !important;
+		text-rendering: optimizelegibility !important;
 
 }
 
 h3{
 font-family: Lato, sans-serif;
-	color: #eebf48; 
+	color: #193993; 
 	font-style: italic;
 	text-align: center;
-	font-size: 1.3em;
-	text-rendering: optimizelegibility !important;
+	font-size: 1.5em;
+		text-rendering: optimizelegibility !important;
 
 }
 
 ul,ol,dl,p{
 	font-family: 'Nobile', sans-serif;
 	text-align: left;
-	font-size: 1.2em;
-	text-rendering: optimizelegibility !important;
 }
-	
 
-ul,ol,dl{
-font-size: 1em;}
+	
 
 div.my-header {
 	background-color: #F77A00;

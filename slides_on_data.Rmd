@@ -2,11 +2,13 @@
 title: "Data Literacy"
 subtitle: "Or A Data 101 Training for Juvenile Probation Staff"
 author: "Martin Gleason, MS"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   xaringan::moon_reader:
-    css: ["pro_presentation.css", "libs/remark-css/default.css"]
+    css: ["libs/remark-css/default.css", "pro_presentation.css"]
     self_contained: no
     lib_dir: libs
+    seal: false
     nature:
       beforeInit: "macros.js"
       highlightStyle: github
@@ -26,19 +28,15 @@ source("normal_height.R")
 # need to fix git
 
 ```
-class:center
-# Data Literacy: A Data 101 Training for Juvenile Probation Staff
-`r today() %>% format("%m-%d-%y")`
----
-.center[#Training Ground Rules]
+class: title-slide
+class: inverse
+# Data Literacy for Court Staff 
+## OR Data 101 for Court Staff
 
-*  Take care of your clients and cases
 
-*  Two breaks are built in, but get up and go if you need to
-
-*  Ask questions, even ones that seem obvious
-
-*  Be willing to be challenged
+.center[*Sit back, relax. The training is about to begin!*]
+.center[<iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]
+.bottom[.right[`r today() %>% format("%A, %B %m %Y")`]]
 ---
 .center[#Learning Objectives:]
 
@@ -102,7 +100,7 @@ class: center
 class: center
 # Data or Information
   
-.pull-left[.left[Data: 
+.left[Data: 
 * Facts, figures, and other abstract representations of the world
   + Height
 
@@ -110,9 +108,13 @@ class: center
 
   + Number of Charges
 
-  + Length of Term of Probation]]
+  + Length of Term of Probation
 
-.pull-right[.left[Information:
+  + Demographics]
+---
+class: center
+# Data or Information
+.left[Information:
 * Data that has been processed, given structure, and context
   + Charts and graphs
 
@@ -120,11 +122,19 @@ class: center
 
       - Credit
 
-      - Probation
+      - Census
 
   + Body Mass Index (BMI)
 
-      - [Far From Perfect Model](https://www.npr.org/templates/story/story.php?storyId=106268439)]]
+      - [Far From Perfect Model](https://www.npr.org/templates/story/story.php?storyId=106268439)]
+---
+# Data or Information
+
+* Excercise: Revisit the *How do you use data.*
+
+* Reclassify items as "Data or Information"
+
+.center[![](imgs/classification.jpg)]
 ---
 # How much data do we need?
 --
@@ -152,21 +162,42 @@ class: center
 ---
 class: center
 # The Language of Data
-.pull-left[![:scale 80%](imgs/DataScienceTriangleAnalogy.jpg)]
-.pull-right[![:scale 80%](imgs/DataScienceTriangle.jpg)]
+.pull-left[![:scale 85%](imgs/DataScienceTriangleAnalogy.jpg)]
+.pull-right[![:scale 85%](imgs/DataScienceTriangle.jpg)]
 ##Think of data and information as a new language that requires fluency
 ---
 # Types of Data
-
-.pull-left[## Quantitative
+## Quantitative
 
 *  Discrete: only specific values matter for that data
 
 *  Continuous: All values
 
-*  *Examples?*]
+*  *Examples?*
 
-.pull-right[## Qualitative
+  + Height
+--
+
+
+  + Weight
+
+
+--
+  + Age
+
+
+--
+
+
+  + Income Data
+--
+
+
+  + Blood Pressure
+---
+# Types of Data
+
+## Qualitative
 
 *  Binary: Yes/No
 
@@ -176,7 +207,18 @@ class: center
 
 *  Count/Ratio: Items per Area/Volume
 
-*  *Examples?*]
+*  *Examples?*
+--
+
+  + Tax Bracket
+
+  + Probation Specific
+
+     - Binary
+
+     - Ordinal
+    
+  + Geographic Location
 ---
 class: center
 background-image: url(imgs/coffee.jpg)
@@ -248,6 +290,15 @@ total_height + theme(axis.text = element_text(family = "Nobile", size = 48 ),
 total_height_bar + theme(axis.text = element_text(family = "Nobile", size = 48 ),
         axis.title = element_text(family = "Nobile", size = 48 ))
 ```
+
+???
+* LEad a discussion about waht is wrong with this graph
+* point out that it lacks
+  + a title 
+  + no sourcing information
+  + units are not clear
+  + Bar Graph is not normal
+  + clue is in the chart
 ---
 ## Correct Way to Visualize
 ```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 4, fig.width = 10, message = FALSE}
@@ -264,18 +315,7 @@ total_height_chart %>% kable(caption = "All Measurements in cm") %>%
 
 ```
 ---
-class: center
-background-image: url(imgs/break.gif)
-# Take a break
----
-.center[# The Training So Far]
 
-* Measures of Central Tendency.
-
-* Measures of Variance.
-
-* **How to think critically about data?**
----
 # The Stastical Model
 
 * A representation of what the data tells us
@@ -303,8 +343,9 @@ background-image: url(imgs/break.gif)
 * Prescriptive: Best course?
 ---
 ## Diagnostic Analytics
-* Why did this happen?
+
 .center[![Do not be afraid to ask why.](imgs/why.gif)]
+* Why did this happen?  
 ---
 ## Predictive Analytics
 * What could happen
@@ -326,7 +367,7 @@ background-image: url(imgs/break.gif)
 ## Exercise 3: Discussion of Prescriptive Statistics
 --
 
-.center[![:scale 55%](imgs/unicorn.gif)]
+.center[![:scale 75%](imgs/scrouge.gif)]
 ---
 # How do we collect data or information?
 --
@@ -362,6 +403,8 @@ background-image: url(imgs/break.gif)
 
 
 * JEMS
+
+  + *C5/Supervisor is coming!*
 --
 
 
@@ -411,7 +454,12 @@ background-image: url(imgs/break.gif)
 ---
 class: center
 # Exercise 4: Critique This Spreadsheet
-.center[![:scale 75%](imgs/fakeSheet.png)]
+.center[![:scale 95%](imgs/fakeSheet.png)]
+???
+* This spreadsheet will be a handout
+* Solo work
+* 5-10 minutes
+* The image will remain on screens
 ---
 # Exercise 4: Takeaways
 
