@@ -2,6 +2,10 @@ a, a > code {
   color: #193993;
   text-decoration: underline;
 }
+
+
+
+
 .footnote {
   position: absolute;
   bottom: 3em;
@@ -49,7 +53,7 @@ a, a > code {
   clear: both;
 }
 img, video, iframe {
-  max-width: 100%;
+  max-width: 200%;
 }
 blockquote {
   border-left: solid 5px lightgray;

@@ -1,6 +1,7 @@
 /* importing the following fonts: Spectral for headings, scope one, for body. */
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css?family=Nobile|Spectral|Lato');
+</style type>
 
 /* Currently, the root trick does not work.
 :root{
@@ -13,23 +14,29 @@
 }
 */
 
-.remark-container{
-	background-color: coral;
-	}
+.remark-slide-content{
+	background-color: #9b9292;
+}
+
+
 
 h1{
 	font-family: Lato, sans-serif;
 	color: #193993;
 	font-size: 2.2em;
 	text-align: center;
+	text-rendering: optimizelegibility !important;
+
 }
 
 h2{
 	font-family: Lato, sans-serif;
-	color: #eebf48;
+	color:   #193993;
 	font-size: 1.5em;
 	font-style: italic;
 	text-align: center;
+	text-rendering: optimizelegibility !important;
+
 }
 
 h3{
@@ -38,12 +45,16 @@ font-family: Lato, sans-serif;
 	font-style: italic;
 	text-align: center;
 	font-size: 1.3em;
+	text-rendering: optimizelegibility !important;
+
 }
 
 ul,ol,dl,p{
 	font-family: 'Nobile', sans-serif;
 	text-align: left;
-	font-size: 1.2em;}
+	font-size: 1.2em;
+	text-rendering: optimizelegibility !important;
+}
 	
 
 ul,ol,dl{
@@ -79,4 +90,4 @@ div.my-header {
 	text-align:left !important;
 	}
 
-</style type>
+

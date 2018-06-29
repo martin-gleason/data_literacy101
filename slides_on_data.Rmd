@@ -70,10 +70,10 @@ class: center
 # The Bro-Map
 
 .pull-left[
-![](imgs/bro.gif)]
+![:scale 85%](imgs/bro.gif)]
 
 .pull-right[.left[
-Excercise 1: How do you use data?
+Exercise 1: How do you use data?
 
 {{content}}
 ]]
@@ -83,7 +83,14 @@ Excercise 1: How do you use data?
 * Can be alone or in a group.
 {{content}}
 
-* Take five minutes to note how you use personal **or** probation data.
+* Take the alloyed time  to note how you use personal **or** probation data.
+
+???
+Icebreaker Exercise instructions: 
+* Give the room 5-10 minutes to discuss how they use data. 
+* Can include a musical track.
+* On a white board, write down audience responses
+* if no response, go to the next slide and ask for people to raise their hand
 ---
 class: center
 # Sharing is Caring
@@ -139,6 +146,9 @@ class: center
 
 
 .center[![](imgs/toomuch.gif)]
+???
+* Point is to break down the difference between Data and Information
+ 
 ---
 class: center
 # The Language of Data
@@ -284,7 +294,7 @@ background-image: url(imgs/break.gif)
 # Four Kinds of Analytics
 
 * Descriptive: What?
-    + Very similiar to descriptive statistics.
+    + Very similar to descriptive statistics.
 
 * Diagnostic: Why? 
 
@@ -313,7 +323,7 @@ background-image: url(imgs/break.gif)
 * What is the best course of action?
 .center[![The Process](imgs/Prescriptive_Analytics_process.png)]
 ---
-## Excercise 3: Discussion of Perscriptive Statistics
+## Exercise 3: Discussion of Prescriptive Statistics
 --
 
 .center[![:scale 55%](imgs/unicorn.gif)]
@@ -395,15 +405,15 @@ background-image: url(imgs/break.gif)
 * In our office, we use Excel
   + Google Sheets
 
-  + And, occassionally, tables in Word
+  + And, occasionally, tables in Word
 
   + What should we use Spreadsheets for?
 ---
 class: center
-# Excercise 4: Critique This Spreadsheet
+# Exercise 4: Critique This Spreadsheet
 .center[![:scale 75%](imgs/fakeSheet.png)]
 ---
-# Excercise 4: Takeaways
+# Exercise 4: Takeaways
 
 * Cells are not atomic
 
