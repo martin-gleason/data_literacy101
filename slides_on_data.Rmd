@@ -51,6 +51,8 @@ class: inverse
 *  What we can do to improve our Data Quality
 
 *  To discover what you want to learn next
+???
+This is presentation mode. Wherein my notes are collected. 
 ---
 .center[# Expectations]
 .center[![](imgs/schoolHouseRock.gif)]
@@ -96,6 +98,9 @@ class: center
 
 
 .center[Who wants to share how they use data?]
+
+???
+* Ask staff to share how they use data
 ---
 class: center
 # Data or Information
@@ -158,6 +163,7 @@ class: center
 .center[![](imgs/toomuch.gif)]
 ???
 * Point is to break down the difference between Data and Information
+* Encourage the development of data driven culture
  
 ---
 class: center
@@ -225,6 +231,8 @@ background-image: url(imgs/coffee.jpg)
 background-size: cover;
 #The Coffee Example
 
+???
+* coffee as discrete, continuous, and categorical(binary) data.
 ---
 class:center
 # Descriptive Statistics
@@ -258,6 +266,11 @@ class:center
 
 
 * Standard Deviation: The distance, in the same unit, between data points
+
+???
+* Ask why these are useful measures for us
+* point to JDAI stats, detention stats
+* dis-aggregating data by race was a huge push for JDAI, what else should we separate?
 ---
 class:center
 # Total Height
@@ -292,7 +305,7 @@ total_height_bar + theme(axis.text = element_text(family = "Nobile", size = 48 )
 ```
 
 ???
-* LEad a discussion about waht is wrong with this graph
+* Lead a discussion about what is wrong with this graph
 * point out that it lacks
   + a title 
   + no sourcing information
@@ -314,6 +327,9 @@ total_height_chart %>% kable(caption = "All Measurements in cm") %>%
   kable_styling("striped", "bordered", full_width = FALSE)
 
 ```
+???
+* ask if there are other questions or points to this graph
+* point to the scales as another aspect to be critical of
 ---
 
 # The Stastical Model
@@ -330,6 +346,8 @@ total_height_chart %>% kable(caption = "All Measurements in cm") %>%
 --
 
 .center[![:scale 53%](imgs/boosting-algo-7.gif)]
+???
+Actuarial vs Statistical model discussion can occur.
 ---
 # Four Kinds of Analytics
 
