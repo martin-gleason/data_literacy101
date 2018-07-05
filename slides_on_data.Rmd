@@ -37,6 +37,9 @@ class: inverse
 .center[*Sit back, relax. The training is about to begin!*]
 .center[<iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]
 .bottom[.right[`r today() %>% format("%A, %B %m %Y")`]]
+
+???
+Youtube is for set up me, really.
 ---
 .center[#Learning Objectives:]
 
