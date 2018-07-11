@@ -90,10 +90,7 @@ Exercise 1: How do you use data?
 
 ???
 Icebreaker Exercise instructions: 
-* Give the room 5-10 minutes to discuss how they use data. 
-* Can include a musical track.
-* On a white board, write down audience responses
-* if no response, go to the next slide and ask for people to raise their hand
+* Have everyone line up by birthday, descending, without speaking
 ---
 class: center
 # Sharing is Caring
@@ -497,6 +494,17 @@ class: center
 * Performance based budgeting
 
 * Risk Level and Classification
+---
+# Four Kinds of Analytics: Redux
+
+* Descriptive: What?
+
+* Diagnostic: Why? 
+
+* Predictive: What if?
+
+* Prescriptive: Best course?
+
 ---
 # Where Do We Go From Here
 * We have the language, now what are *our* goals?
