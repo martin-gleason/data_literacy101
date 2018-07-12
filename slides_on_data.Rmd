@@ -527,7 +527,6 @@ class: center
 
 
 
-
 ---
 # Sources and Further Reading
 * [Tidy data Paper](https://vita.had.co.nz/papers/tidy-data.pdf)
