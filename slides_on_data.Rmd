@@ -45,13 +45,16 @@ YouTube is for set up me, really.
 * paper for notes/excercises
 * 5 + attendees copy of bad spreadsheet data
 ---
-class: center?
+class: center, middle
 # Word Cloud: Your Registration Data
-```{r, wordcloud, include = T, message = FALSE, echo = FALSE, fig.align='center', fig.height = 10, fig.width = 10}
+```{r, wordcloud, include = T, message = FALSE, echo = FALSE, fig.align='center', fig.height = 5, fig.width = 5, fig.pos=""}
 source("wordcloud.R")
 
 
+
 ```
+???
+Wordcloud for discussio of metric and data
 ---
 .center[#Learning Objectives:]
 
