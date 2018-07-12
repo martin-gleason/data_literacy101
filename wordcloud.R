@@ -21,4 +21,4 @@ words_tidy <- words_untidy %>%
 
 question_cloud <- words_tidy %>%
   count(word) %>%
-  with(wordcloud(word, n, max.words = 25, colors = pro_colors_scheme))
+  with(wordcloud(word, n, min.freq = 1, max.words = 25, colors = pro_colors_scheme))
