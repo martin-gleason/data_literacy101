@@ -4,7 +4,8 @@ library("googlesheets")
 library("wordcloud")
 library("RColorBrewer")
 library("tidytext")
-
+library("showtext")
+font_add_google(name = "Nobile")
 source("../scripts/color_scheme.R")
 
 responses <- gs_url("https://docs.google.com/spreadsheets/d/1oqOAeku8K8JGb31U8HGHu6PsAaxGWdtFxZFLUKtDlpE/edit#gid=1115118292")
@@ -21,4 +22,6 @@ words_tidy <- words_untidy %>%
 
 question_cloud <- words_tidy %>%
   count(word) %>%
-  with(wordcloud(word, n, min.freq = 1, max.words = 25, colors = pro_colors_scheme))
+  with(wordcloud(word, n, min.freq = 1,
+                 max.words = 25, colors = pro_colors_scheme,
+                 family = "Nobile"))
