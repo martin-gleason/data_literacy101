@@ -4,7 +4,7 @@
     <title>Data Literacy</title>
     <meta charset="utf-8">
     <meta name="author" content="Martin Gleason, MS" />
-    <meta name="date" content="2018-07-11" />
+    <meta name="date" content="2018-07-12" />
     <script src="libs/kePrint-0.0.1/kePrint.js"></script>
     <link rel="stylesheet" href="libs/remark-css/default.css" type="text/css" />
     <link rel="stylesheet" href="pro_presentation.css" type="text/css" />
@@ -21,7 +21,7 @@ class: inverse
 
 .center[*Sit back, relax. The training is about to begin!*]
 .center[&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;]
-.bottom[.right[Wednesday, July 07 2018]]
+.bottom[.right[Thursday, July 07 2018]]
 
 ???
 Youtube is for set up me, really.
@@ -570,12 +570,23 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   d.head.appendChild(s);
 })();</script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
   }
-});
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
