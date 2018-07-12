@@ -4,7 +4,7 @@
     <title>Data Literacy</title>
     <meta charset="utf-8">
     <meta name="author" content="Martin Gleason, MS" />
-    <meta name="date" content="2018-07-04" />
+    <meta name="date" content="2018-07-12" />
     <script src="libs/kePrint-0.0.1/kePrint.js"></script>
     <link rel="stylesheet" href="libs/remark-css/default.css" type="text/css" />
     <link rel="stylesheet" href="pro_presentation.css" type="text/css" />
@@ -21,10 +21,14 @@ class: inverse
 
 .center[*Sit back, relax. The training is about to begin!*]
 .center[&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;]
-.bottom[.right[Wednesday, July 07 2018]]
+.bottom[.right[Thursday, July 07 2018]]
 
 ???
-Youtube is for set up me, really.
+YouTube is for set up me, really.
+# Icebreaker Exercise instructions: 
+* Have everyone line up by birthday, descending, without speaking
+* ask for purpose
+* language, which comes in many forms, is critical to the exchange of good information
 ---
 .center[#Learning Objectives:]
 
@@ -47,6 +51,15 @@ This is presentation mode. Wherein my notes are collected.
 
 
 .bottom[.center[What do **you** want to learn today?]]
+
+???
+leading questions --
+
+* AI?
+* Big Data?
+* Role in Juvenile Justice
+* Data skepticism
+
 ---
 class: center
 # What Is Data? 
@@ -74,8 +87,8 @@ Exercise 1: How do you use data?
 * Take the alloyed time  to note how you use personal **or** probation data.
 
 ???
-Icebreaker Exercise instructions: 
-* Give the room 5-10 minutes to discuss how they use data. 
+Additional instructions: 
+* Give the room 5-15 minutes to discuss how they use data. 
 * Can include a musical track.
 * On a white board, write down audience responses
 * if no response, go to the next slide and ask for people to raise their hand
@@ -89,6 +102,7 @@ class: center
 
 ???
 * Ask staff to share how they use data
+* tell them to hold on to it
 ---
 class: center
 # Data or Information
@@ -129,7 +143,7 @@ class: center
 
 .center[![](imgs/classification.jpg)]
 ---
-# How much data do we need?
+# Do We Need Data?
 --
 
 
@@ -144,6 +158,8 @@ class: center
   + *Challenging either can be easily interpreted as a personal attack*
 --
  
+ 
+  + *Why not take all the available data?*
  
 * **A better question is: What data do we need?**    
 
@@ -259,6 +275,7 @@ class:center
 * Ask why these are useful measures for us
 * point to JDAI stats, detention stats
 * dis-aggregating data by race was a huge push for JDAI, what else should we separate?
+* remember Median = mean in normal distro; in income, use median over mean. Sometimes in categorical/Qualitative data, use median over mean
 ---
 class:center
 # Total Height
@@ -455,6 +472,14 @@ Actuarial vs Statistical model discussion can occur.
 
 
 * *Spreadsheets*
+  + Also how we store and transform most data
+
+???
+# Database v Spreadsheet:
+* DB relational, SP flat file
+* DB hard, SP easy
+* DB limited access, SP everyone has excel
+
 ---
 .center[# Tidy Data]
 * Each variable forms a column.
@@ -478,7 +503,7 @@ Actuarial vs Statistical model discussion can occur.
   + Data Analysis
 
 * In our office, we use Excel
-  + Google Sheets
+  + Google Sheets is very similar
 
   + And, occasionally, tables in Word
 
@@ -490,7 +515,7 @@ class: center
 ???
 * This spreadsheet will be a handout
 * Solo work
-* 5-10 minutes
+* 5-15 minutes
 * The image will remain on screens
 ---
 # Exercise 4: Takeaways
@@ -508,7 +533,19 @@ class: center
 * Performance based budgeting
 
 * Risk Level and Classification
+
 ---
+# Four Kinds of Analytics: Redux
+
+* Descriptive: What?
+
+* Diagnostic: Why? 
+
+* Predictive: What if?
+
+* Prescriptive: What is the best course?
+---
+
 # Where Do We Go From Here
 * We have the language, now what are *our* goals?
 --
@@ -544,6 +581,7 @@ class: center
 * [Statistical Model](https://en.wikipedia.org/wiki/Statistical_model)
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
+* [Intro to Statistics](https://www.datacamp.com/tracks/learn-statistics-with-r)
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="macros.js"></script>
@@ -562,12 +600,23 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   d.head.appendChild(s);
 })();</script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
   }
-});
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
