@@ -39,11 +39,7 @@ class: inverse
 .bottom[.right[`r today() %>% format("%A, %B %m %Y")`]]
 
 ???
-YouTube is for set up me, really.
-# Icebreaker Exercise instructions: 
-* Have everyone line up by birthday, descending, without speaking
-* ask for purpose
-* language, which comes in many forms, is critical to the exchange of good information
+Youtube is for set up me, really.
 ---
 .center[#Learning Objectives:]
 
@@ -66,15 +62,6 @@ This is presentation mode. Wherein my notes are collected.
 
 
 .bottom[.center[What do **you** want to learn today?]]
-
-???
-leading questions --
-
-* AI?
-* Big Data?
-* Role in Juvenile Justice
-* Data skepticism
-
 ---
 class: center
 # What Is Data? 
@@ -102,11 +89,8 @@ Exercise 1: How do you use data?
 * Take the alloyed time  to note how you use personal **or** probation data.
 
 ???
-Additional instructions: 
-* Give the room 5-15 minutes to discuss how they use data. 
-* Can include a musical track.
-* On a white board, write down audience responses
-* if no response, go to the next slide and ask for people to raise their hand
+Icebreaker Exercise instructions: 
+* Have everyone line up by birthday, descending, without speaking
 ---
 class: center
 # Sharing is Caring
@@ -117,7 +101,6 @@ class: center
 
 ???
 * Ask staff to share how they use data
-* tell them to hold on to it
 ---
 class: center
 # Data or Information
@@ -158,7 +141,7 @@ class: center
 
 .center[![](imgs/classification.jpg)]
 ---
-# Do We Need Data?
+# How much data do we need?
 --
 
 
@@ -173,8 +156,6 @@ class: center
   + *Challenging either can be easily interpreted as a personal attack*
 --
  
- 
-  + *Why not take all the available data?*
  
 * **A better question is: What data do we need?**    
 
@@ -290,7 +271,6 @@ class:center
 * Ask why these are useful measures for us
 * point to JDAI stats, detention stats
 * dis-aggregating data by race was a huge push for JDAI, what else should we separate?
-* remember Median = mean in normal distro; in income, use median over mean. Sometimes in categorical/Qualitative data, use median over mean
 ---
 class:center
 # Total Height
@@ -461,14 +441,6 @@ Actuarial vs Statistical model discussion can occur.
 
 
 * *Spreadsheets*
-  + Also how we store and transform most data
-
-???
-# Database v Spreadsheet:
-* DB relational, SP flat file
-* DB hard, SP easy
-* DB limited access, SP everyone has excel
-
 ---
 .center[# Tidy Data]
 * Each variable forms a column.
@@ -492,7 +464,7 @@ Actuarial vs Statistical model discussion can occur.
   + Data Analysis
 
 * In our office, we use Excel
-  + Google Sheets is very similar
+  + Google Sheets
 
   + And, occasionally, tables in Word
 
@@ -504,7 +476,7 @@ class: center
 ???
 * This spreadsheet will be a handout
 * Solo work
-* 5-15 minutes
+* 5-10 minutes
 * The image will remain on screens
 ---
 # Exercise 4: Takeaways
@@ -522,7 +494,6 @@ class: center
 * Performance based budgeting
 
 * Risk Level and Classification
-
 ---
 # Four Kinds of Analytics: Redux
 
@@ -532,9 +503,9 @@ class: center
 
 * Predictive: What if?
 
-* Prescriptive: What is the best course?
----
+* Prescriptive: Best course?
 
+---
 # Where Do We Go From Here
 * We have the language, now what are *our* goals?
 --
@@ -570,4 +541,3 @@ class: center
 * [Statistical Model](https://en.wikipedia.org/wiki/Statistical_model)
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
-* [Intro to Statistics](https://www.datacamp.com/tracks/learn-statistics-with-r) 
