@@ -22,7 +22,8 @@ library(kableExtra)
 library(viridis)
 library(plotly)
 library(xaringan)
-source("normal_height.R") 
+source("normal_height.R")
+
 # figure out how to make sure it works on windows or mac
 # need to fix formating data
 # need to fix git
@@ -40,6 +41,17 @@ class: inverse
 
 ???
 YouTube is for set up me, really.
+# Materials needed for in-person training:
+* paper for notes/excercises
+* 5 + attendees copy of bad spreadsheet data
+---
+class: center?
+# Word Cloud: Your Registration Data
+```{r, wordcloud, include = T, message = FALSE, echo = FALSE, fig.align='center', fig.height = 10, fig.width = 10}
+source("wordcloud.R")
+
+
+```
 ---
 .center[#Learning Objectives:]
 
@@ -55,7 +67,9 @@ YouTube is for set up me, really.
 
 *  To discover what you want to learn next
 ???
-This is presentation mode. Wherein my notes are collected. 
+Icebreaker Exercise instructions: 
+* Have everyone line up by birthday, descending, without speaking
+* the point is to illustrate how critical language is to easy exchange of knowledge 
 ---
 .center[# Expectations]
 .center[![](imgs/schoolHouseRock.gif)]
@@ -89,9 +103,9 @@ Exercise 1: How do you use data?
 * Take the allotted time to note how you use personal **or** probation data.
 
 ???
-Icebreaker Exercise instructions: 
-* Have everyone line up by birthday, descending, without speaking
-* the point is to illustrate how critical language is to easy exchange of knowledge
+* 10-15 minutes
+* remind them to hold on to this
+* materials required will include: Paper!
 ---
 class: center
 # Sharing is Caring
@@ -277,7 +291,7 @@ class:center
 ---
 class:center
 # Total Height
-```{r, TrickQuestion_one, include= TRUE, echo = F, fig.align='center', fig.height = 6, fig.width = 8,message = FALSE}
+```{r, TrickQuestion_one, include= TRUE, echo = F, fig.align='center', fig.height = 6, fig.width = 8, message = FALSE}
 total_height_bar
 ```
 ---
