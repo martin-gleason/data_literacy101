@@ -2,6 +2,7 @@
 library("tidyverse")
 library("googlesheets")
 library("wordcloud")
+library("wordcloud2")
 library("RColorBrewer")
 library("tidytext")
 library("showtext")
@@ -24,4 +25,9 @@ question_cloud <- words_tidy %>%
   count(word) %>%
   with(wordcloud(word, n, min.freq = 1,
                  max.words = 25, colors = pro_colors_scheme,
-                 scale = , family = "Nobile"))
+                 family = "Nobile",
+                 scale = c(3, 3)))
+
+# wc2 <- words_tidy %>%
+#   count(word) %>%
+#   wordcloud2(fontFamily = "Nobile", color = pro_colors_scheme2, size = 1)
