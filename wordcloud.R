@@ -24,4 +24,4 @@ question_cloud <- words_tidy %>%
   count(word) %>%
   with(wordcloud(word, n, min.freq = 1,
                  max.words = 25, colors = pro_colors_scheme,
-                 family = "Nobile"))
+                 scale = , family = "Nobile"))
