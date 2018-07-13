@@ -47,8 +47,9 @@ YouTube is for set up me, really.
 ---
 class: center, middle
 # Word Cloud: Your Registration Data
-```{r, wordcloud, include = T, message = FALSE, echo = FALSE, fig.align='center', fig.height = 5, fig.width = 5, fig.pos=""}
+```{r, wordcloud, include = T, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center'}
 source("wordcloud.R")
+
 
 
 
