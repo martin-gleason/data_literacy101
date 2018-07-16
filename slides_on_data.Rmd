@@ -26,8 +26,8 @@ source("normal_height.R")
 
 
 # figure out how to make sure it works on windows or mac
-# need to fix formating data
-# need to fix git
+# need to fix formating data  ssh-add ~/.ssh/id_rsa
+# need to fix gitv
 
 ```
 class: title-slide
