@@ -24,6 +24,7 @@ library(plotly)
 library(xaringan)
 source("normal_height.R")
 
+
 # figure out how to make sure it works on windows or mac
 # need to fix formating data
 # need to fix git
@@ -44,18 +45,7 @@ YouTube is for set up me, really.
 # Materials needed for in-person training:
 * paper for notes/exercises
 * 5 + attendees copy of bad spreadsheet data
----
-class: center, middle
-# Word Cloud: Your Registration Data
-```{r, wordcloud, include = T, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center'}
-source("wordcloud.R")
 
-
-
-
-```
-???
-Wordcloud for discussion of metric and data
 ---
 .center[#Learning Objectives:]
 
@@ -407,6 +397,18 @@ Actuarial vs Statistical model discussion can occur.
 --
 
 .center[![:scale 75%](imgs/scrouge.gif)]
+---
+class: center, middle
+# Word Cloud: Your Registration Data
+```{r, wordcloud, include = T, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center'}
+source("wordcloud.R")
+
+
+
+
+```
+???
+Wordcloud for discussion of metric and data
 ---
 # How do we collect data or information?
 --
