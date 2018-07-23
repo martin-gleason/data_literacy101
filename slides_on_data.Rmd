@@ -25,9 +25,10 @@ library(xaringan)
 library("sysfonts")
 source("normal_height.R")
 
+
 # figure out how to make sure it works on windows or mac
-# need to fix formating data
-# need to fix git
+# need to fix formating data  ssh-add ~/.ssh/id_rsa
+# need to fix gitv
 
 ```
 class: title-slide
@@ -203,15 +204,15 @@ class: center
 reinforce data as new language
 ---
 class: center
-# Word Cloud: Your Registration Data<sup>2</sup>
+# Word Cloud: Your Registration Data<sup>1</sup>
 
-```{r, wordcloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height=5, fig.width=5}
+```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height=5, fig.width=5}
 source("wordcloud.R")
 
 ```
 
 .footnote[
-#####**From a total of `r length(unique(email))` registrants.**]
+#####[1]From a total of `r length(unique(email))` registrants.]
 
 ???
 * Wordcloud for discussion of metric and data
@@ -269,7 +270,7 @@ source("wordcloud.R")
 # Types of Data
 ## Probation Specific Examples
 
-* Quantatative Examples?
+* Quantitative Examples?
 
   + Number of youth on probation
   
@@ -279,7 +280,7 @@ source("wordcloud.R")
 
 --
 
-* Qualatative Examples
+* Qualitative Examples
 
   + What services is the young person ordered to attend?
   
@@ -303,7 +304,7 @@ background-size: cover;
 * How much do you drink every morning
   
   + In discrete terms.
-  + In continious terms.
+  + In continuous terms.
   
 .center[![:scale 75%](imgs/tomHanksJuice.gif)]
 ---
@@ -360,7 +361,7 @@ class:center
 .footnote[[1] Or voluntold, I'm not picky.]
 ???
 Volunteer/voluntold
-Quesiton: how best to 
+Question: how best to 
 ---
 ## Best Practices: Visualization
 ```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 4, fig.width = 10, message = FALSE}
@@ -413,8 +414,12 @@ Actuarial vs Statistical model discussion can occur.
 ## Diagnostic Analytics
 
 .center[![Do not be afraid to ask why.](imgs/why.gif)]
+
+* Why has the number of violations increased in this district?  
+
 * Why did this happen?  
 * What kind of diagnostic questions should we ask?
+
 ---
 ## Predictive Analytics
 * What could happen
@@ -428,10 +433,15 @@ Actuarial vs Statistical model discussion can occur.
 
 
 .center[![:scale 60%](imgs/superimportantoutcome.png)]
+
+  + What is the chance of this specific young person re offending?
 ---
 # Perscriptive  Analytics
 * What is the best course of action?
 .center[![The Process](imgs/Prescriptive_Analytics_process.png)]
+
+* What is the best service/intervention for this young person to reduce their level of risk?
+
 ---
 ## Exercise 3: Discussion of Prescriptive Statistics
 --
@@ -439,6 +449,18 @@ Actuarial vs Statistical model discussion can occur.
 .center[![:scale 70%](imgs/scrouge.gif)]
 
 * This is what all of our models are attempting to answer
+---
+class: center, middle
+# Word Cloud: Your Registration Data
+```{r, wordcloud, include = T, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center'}
+source("wordcloud.R")
+
+
+
+
+```
+???
+Wordcloud for discussion of metric and data
 ---
 # How do we collect data or information?
 --
