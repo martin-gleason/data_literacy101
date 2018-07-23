@@ -414,12 +414,12 @@ Actuarial vs Statistical model discussion can occur.
 ## Diagnostic Analytics
 
 .center[![Do not be afraid to ask why.](imgs/why.gif)]
-<<<<<<< HEAD
+
 * Why has the number of violations increased in this district?  
-=======
+
 * Why did this happen?  
 * What kind of diagnostic questions should we ask?
->>>>>>> master
+
 ---
 ## Predictive Analytics
 * What could happen
