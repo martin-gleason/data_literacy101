@@ -50,8 +50,6 @@ YouTube is for set up me, really.
 * paper for notes/exercises
 * 5 + attendees copy of bad spreadsheet data
 
-=======
-
 ---
 class: inverse
 
@@ -64,7 +62,6 @@ class: inverse
 ???
 1) Discuss importance of communication
 2) lighten the mood
->>>>>>> master
 ---
 .center[#Learning Objectives:]
 
@@ -207,15 +204,15 @@ class: center
 reinforce data as new language
 ---
 class: center
-# Word Cloud: Your Registration Data<sup>2</sup>
+# Word Cloud: Your Registration Data<sup>1</sup>
 
-```{r, wordcloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height=5, fig.width=5}
+```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height=5, fig.width=5}
 source("wordcloud.R")
 
 ```
 
 .footnote[
-#####**From a total of `r length(unique(email))` registrants.**]
+#####[1]From a total of `r length(unique(email))` registrants.]
 
 ???
 * Wordcloud for discussion of metric and data
