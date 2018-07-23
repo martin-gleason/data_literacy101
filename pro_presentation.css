@@ -49,8 +49,17 @@ font-family: Lato, sans-serif;
 
 }
 
+h4{
+font-family: Lato, sans-serif;
+	color: #193993; 
+	text-align: right;
+	font-size: .55em;
+		text-rendering: optimizelegibility !important;
+}
+
 ul,ol,dl,p{
 	font-family: 'Nobile', sans-serif;
+	font-size: 1.5rem;
 	text-align: left;
 }
 
@@ -86,4 +95,8 @@ div.my-header {
 	text-align:left !important;
 	}
 
-
+.footnote{
+	color:#193993;
+	font-style: italic;
+	
+}

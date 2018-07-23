@@ -16,12 +16,13 @@ output:
       countIncrementalSlides: false
 ---
 ```{r, packages, include=T, echo=FALSE, message = FALSE, warning = FALSE}
-library(tidyverse)
+library(tidyverse) 
 library(lubridate)
 library(kableExtra)
 library(viridis)
 library(plotly)
 library(xaringan)
+library("sysfonts")
 source("normal_height.R")
 
 # figure out how to make sure it works on windows or mac
@@ -30,32 +31,36 @@ source("normal_height.R")
 
 ```
 class: title-slide
-class: inverse
-# Data Literacy for Court Staff 
+class: inverse, center
+# Data Literacy for Court Staff
 ## OR Data 101 for Court Staff
 
 
 .center[*Sit back, relax. The training is about to begin!*]
-.center[<iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]
+
+.center[<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLlcpS_fiQECCWSmK5Uom236PXE6hEVz22" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]
+
 .bottom[.right[`r today() %>% format("%A, %B %d %Y")`]]
+
 
 ???
 YouTube is for set up me, really.
 # Materials needed for in-person training:
 * paper for notes/exercises
 * 5 + attendees copy of bad spreadsheet data
+
 ---
-class: center, middle
-# Word Cloud: Your Registration Data
-```{r, wordcloud, include = T, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center'}
-source("wordcloud.R")
+class: inverse
 
+# Icebreaker Activity
+* Line up according to birthday: Month, Day (no need for age)
 
+* No VERBAL or WRITTEN communication allowed
 
-
-```
+.center[![:scale 55%](imgs/icebreaker.jpg)]
 ???
-Wordcloud for discussion of metric and data
+1) Discuss importance of communication
+2) lighten the mood
 ---
 .center[#Learning Objectives:]
 
@@ -101,10 +106,12 @@ Exercise 1: How do you use data?
 
 --
 
-* Can be alone or in a group.
+* At your table.
 {{content}}
 
 * Take the allotted time to note how you use personal **or** probation data.
+
+* Write it down!
 
 ???
 * 10-15 minutes
@@ -192,6 +199,23 @@ class: center
 .pull-left[![:scale 85%](imgs/DataScienceTriangleAnalogy.jpg)]
 .pull-right[![:scale 85%](imgs/DataScienceTriangle.jpg)]
 ##Think of data and information as a new language that requires fluency
+???
+reinforce data as new language
+---
+class: center
+# Word Cloud: Your Registration Data<sup>2</sup>
+
+```{r, wordcloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height=5, fig.width=5}
+source("wordcloud.R")
+
+```
+
+.footnote[
+#####**From a total of `r length(unique(email))` registrants.**]
+
+???
+* Wordcloud for discussion of metric and data
+* illustrates expectations
 ---
 # Types of Data
 ## Quantitative
@@ -237,15 +261,32 @@ class: center
 *  *Examples?*
 --
 
-  + Tax Bracket
+  + Binary
+  + Ordinal
+  + Nominal
+  + Geographic Location?
+---
+# Types of Data
+## Probation Specific Examples
 
-  + Probation Specific
+* Quantatative Examples?
 
-     - Binary
+  + Number of youth on probation
+  
+  + Number of Violations
+  
+  + Number of service agencies
 
-     - Ordinal
-    
-  + Geographic Location
+--
+
+* Qualatative Examples
+
+  + What services is the young person ordered to attend?
+  
+  + Violations per district 
+  
+  + Termination Status
+
 ---
 class: center
 background-image: url(imgs/coffee.jpg)
@@ -254,6 +295,17 @@ background-size: cover;
 
 ???
 * coffee as discrete, continuous, and categorical(binary) data.
+---
+# Morning Beverage Excercise
+
+* What do you drink every morning?
+
+* How much do you drink every morning
+  
+  + In discrete terms.
+  + In continious terms.
+  
+.center[![:scale 75%](imgs/tomHanksJuice.gif)]
 ---
 class:center
 # Descriptive Statistics
@@ -281,60 +333,36 @@ class:center
 * Range: Minimum number to maximum number
 --
 
-
-* Variance: How spread out the data points are
---
-
-
-* Standard Deviation: The distance, in the same unit, between data points
+* Other measures of central tendency include:
+  
+  + Variance
+  + Standard Deviation
+  + Standard error of the Mean
+  + Beyond the scope of today's training
 
 ???
 * Ask why these are useful measures for us
 * point to JDAI stats, detention stats
 * dis-aggregating data by race was a huge push for JDAI, what else should we separate?
 ---
-class:center
-# Total Height
-```{r, TrickQuestion_one, include= TRUE, echo = F, fig.align='center', fig.height = 6, fig.width = 8, message = FALSE}
-total_height_bar
-```
----
-class:center
-## Density of Height
-```{r, TrickQuestion_two, include= TRUE, fig.align='center', fig.height = 6, fig.width = 8, echo = F}
-total_height
-```
----
-class:center
-## Measures of Central Tendency with Height
-```{r, trickquestionThree, include = TRUE, echo = FALSE, fig.align='center', fig.height = 6, fig.width = 8, message = FALSE}
-bad_proof
-```
----
-## Chart Example
-```{r, badchart, include = TRUE, echo = FALSE, warning = FALSE, fig.align='center', fig.height = 6, fig.width = 6, message = FALSE}
-bad_height %>% kable() %>% kable_styling("striped", "bordered", full_width = TRUE)
-```
----
-## Exercise 2: How did I mislead you?
-```{r, side_by_side, include = TRUE, warning = FALSE, out.width="49%", fig.height = 15, fig.width = 15, fig.show = "hold", message = FALSE, echo = FALSE}
-total_height + theme(axis.text = element_text(family = "Nobile", size = 48 ),
-        axis.title = element_text(family = "Nobile", size = 48 ))
 
-total_height_bar + theme(axis.text = element_text(family = "Nobile", size = 48 ),
-        axis.title = element_text(family = "Nobile", size = 48 ))
-```
+# Terms in Practice: With Height!
+* One volunteer<sup>1</sup> to document how tall everyone is
+* In inches
+* We will calculate:
+  
+  + Mean
+  + Median
+  + Mode
+  + Range
 
+
+.footnote[[1] Or voluntold, I'm not picky.]
 ???
-* Lead a discussion about what is wrong with this graph
-* point out that it lacks
-  + a title 
-  + no sourcing information
-  + units are not clear
-  + Bar Graph is not normal
-  + clue is in the chart
+Volunteer/voluntold
+Quesiton: how best to 
 ---
-## Correct Way to Visualize
+## Best Practices: Visualization
 ```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 4, fig.width = 10, message = FALSE}
 
 total_height_sex_histogram +
@@ -374,6 +402,7 @@ Actuarial vs Statistical model discussion can occur.
 
 * Descriptive: What?
     + Very similar to descriptive statistics.
+    + Examples of probation descriptive statistics?
 
 * Diagnostic: Why? 
 
@@ -385,6 +414,7 @@ Actuarial vs Statistical model discussion can occur.
 
 .center[![Do not be afraid to ask why.](imgs/why.gif)]
 * Why did this happen?  
+* What kind of diagnostic questions should we ask?
 ---
 ## Predictive Analytics
 * What could happen
@@ -406,7 +436,9 @@ Actuarial vs Statistical model discussion can occur.
 ## Exercise 3: Discussion of Prescriptive Statistics
 --
 
-.center[![:scale 75%](imgs/scrouge.gif)]
+.center[![:scale 70%](imgs/scrouge.gif)]
+
+* This is what all of our models are attempting to answer
 ---
 # How do we collect data or information?
 --
@@ -432,36 +464,39 @@ Actuarial vs Statistical model discussion can occur.
 * Forms
 --
 
-
 * Reports
 --
-
 
 * Studies
 --
 
+* JEMS/C5/Supervisor
 
-* JEMS
-
-  + *C5/Supervisor is coming!*
+* Assessment Tools
 --
-
 
 * Other Systems
     + I-Clear
     + Clerks
-    + State's Attorney
+    + Crimes (State's Attorneys)
     + Schools
     + Hospital
     + Promise
---
+    
+---
+#How do we store Data
 
+* Word Documents 
 
 * Databases
 --
 
-
 * *Spreadsheets*
+
+--
+
+
+.center[![:scale 65%](imgs/forest_spreadsheets.jpg)]
 ---
 .center[# Tidy Data]
 * Each variable forms a column.
@@ -516,29 +551,22 @@ class: center
 
 * Risk Level and Classification
 ---
-# Four Kinds of Analytics: Redux
-
-* Descriptive: What?
-
-* Diagnostic: Why? 
-
-* Predictive: What if?
-
-* Prescriptive: Best course?
-
----
 # Where Do We Go From Here
 * We have the language, now what are *our* goals?
 --
 
-
-
 * With your table, discuss where you want to go from here.
---
 
-
+  + Start with a question you want to answer
+  + What descriptive and diagnostic analyses do you need?
+  + Everyone must have a role
+  + Report back to the group
+    + No longer than 60 seconds!
 
 * Use your SMART goals!
+???
+This is supposed to be the L2 activity: ensure that people are leaving understanding some of this data.
+
 ---
 # Thank you
 .center[![Thank You](imgs/anyQuestionsDavidSPumpkins.gif)]

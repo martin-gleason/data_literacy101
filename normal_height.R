@@ -3,8 +3,8 @@ library("tidyverse")
 #all heights in cm
 cite <- "https://vincentarelbundock.github.io/Rdatasets/doc/carData/Davis.html"
 
-file_location <- "/Coding\ Projects/DataSets/height_weight.csv"
-height <- read_csv(file.choose(new = FALSE))
+file_location <- "/Users/marty/Dropbox (Personal)/Coding Projects/DataSets/height_weight.csv"
+height <- read_csv(file_location)
 
 height <- height %>% select(-1)
 
