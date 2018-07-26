@@ -450,18 +450,6 @@ Actuarial vs Statistical model discussion can occur.
 
 * This is what all of our models are attempting to answer
 ---
-class: center, middle
-# Word Cloud: Your Registration Data
-```{r, wordcloud, include = T, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center'}
-source("wordcloud.R")
-
-
-
-
-```
-???
-Wordcloud for discussion of metric and data
----
 # How do we collect data or information?
 --
 
