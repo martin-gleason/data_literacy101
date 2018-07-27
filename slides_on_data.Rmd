@@ -23,6 +23,7 @@ library(viridis)
 library(plotly)
 library(xaringan)
 library("sysfonts")
+library("showtext")
 source("normal_height.R")
 
 
@@ -93,26 +94,27 @@ class: center
 
 .bottom[.center[What questions do you have about data?]]
 ---
-class: center
+class: center, middle
 # The Bro-Map
 
-.pull-left[
-![:scale 85%](imgs/bro.gif)]
 
-.pull-right[.left[
-Exercise 1: How do you use data?
+.center[![:scale 110%](imgs/bro.gif)]
+
+---
+### Exercise: How do you use data?
 
 {{content}}
-]]
+
 
 --
 
 * At your table.
-{{content}}
 
 * Take the allotted time to note how you use personal **or** probation data.
 
 * Write it down!
+
+  + You will need it soon!
 
 ???
 * 10-15 minutes
@@ -121,10 +123,10 @@ Exercise 1: How do you use data?
 ---
 class: center
 # Sharing is Caring
-.center[![](imgs/sharingiscaring.jpg)]
+.center[![:scale 59%](imgs/sharingiscaring.jpg)]
 
 
-.center[Who wants to share how they use data?]
+.center[## Who wants to share how they use data?]
 
 ???
 * Ask staff to share how they use data
@@ -166,7 +168,7 @@ class: center
 
 * Reclassify items as "Data or Information"
 
-.center[![](imgs/classification.jpg)]
+.center[![:scale 55%](imgs/classification.jpg)]
 ---
 # How much data do we need?
 --
@@ -197,17 +199,30 @@ class: center
 ---
 class: center
 # The Language of Data
-.pull-left[![:scale 85%](imgs/DataScienceTriangleAnalogy.jpg)]
-.pull-right[![:scale 85%](imgs/DataScienceTriangle.jpg)]
-##Think of data and information as a new language that requires fluency
+.pull-left[![:scale 100%](imgs/DataScienceTriangleAnalogy.jpg)]
+.pull-right[![:scale 100%](imgs/DataScienceTriangle.jpg)]
+</br>
+</br>
+### Think of data and information as a new language that requires fluency
 ???
 reinforce data as new language
 ---
-class: center
+class: center, middle
 # Word Cloud: Your Registration Data<sup>1</sup>
 
-```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height=5, fig.width=5}
+```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height = 10, fig.width=10}
+
 source("wordcloud.R")
+
+
+question_cloud <- words_tidy %>%
+  count(word) %>%
+  with(wordcloud(word, n, min.freq = 1,
+                 max.words = 25, colors = pro_colors_scheme,
+                 family = "Nobile",
+                 scale = c(4, 1)),
+       fill = "transparent",
+       height = 960, width =960, units = "px")
 
 ```
 
@@ -289,10 +304,9 @@ source("wordcloud.R")
   + Termination Status
 
 ---
-class: center
-background-image: url(imgs/coffee.jpg)
-background-size: cover;
+class: center, middle
 #The Coffee Example
+.center[![:scale 110%](imgs/coffee.jpg)]
 
 ???
 * coffee as discrete, continuous, and categorical(binary) data.
@@ -306,7 +320,7 @@ background-size: cover;
   + In discrete terms.
   + In continuous terms.
   
-.center[![:scale 75%](imgs/tomHanksJuice.gif)]
+.center[![:scale 65%](imgs/tomHanksJuice.gif)]
 ---
 class:center
 # Descriptive Statistics
@@ -316,7 +330,7 @@ class:center
 .right[[--Investopedia](https://www.investopedia.com/terms/d/descriptive_statistics.asp)]
 
 ---
-# Measures of Central Tendency and Variablity
+# Measures of Central Tendency and Variability
 
 
 * Mean: Average
@@ -332,14 +346,7 @@ class:center
 
 
 * Range: Minimum number to maximum number
---
 
-* Other measures of central tendency include:
-  
-  + Variance
-  + Standard Deviation
-  + Standard error of the Mean
-  + Beyond the scope of today's training
 
 ???
 * Ask why these are useful measures for us
@@ -349,30 +356,38 @@ class:center
 
 # Terms in Practice: With Height!
 * One volunteer<sup>1</sup> to document how tall everyone is
-* In inches
-* We will calculate:
+  + In inches
   
-  + Mean
-  + Median
-  + Mode
-  + Range
+* We will calculate:
+--
 
+  + *Range: Minimum number to maximum number.*
+  
+  + *Mean: Add up all the numbers, divide by the amount of entries.*
+  
+  + *Median: Mid point in the heights*
+  
+  + *Mode: Most frequent number*
 
+</br>
+</br>
 .footnote[[1] Or voluntold, I'm not picky.]
 ???
 Volunteer/voluntold
 Question: how best to 
+mode: can have 0 to n 
 ---
 ## Best Practices: Visualization
-```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 4, fig.width = 10, message = FALSE}
+```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
 
 total_height_sex_histogram +
     theme(panel.spacing = unit(5, "lines"))+
-  facet_grid(~ sex)+
+  facet_grid(~ Sex)+
   theme(axis.text = element_text(family = "Nobile", size = 20 ),
         axis.title = element_text(family = "Nobile", size = 20 ),
         legend.text = element_text(family = "Nobile", size = 20),
         legend.title = element_text(family = "Nobile", size = 20))
+
 total_height_chart %>% kable(caption = "All Measurements in cm") %>% 
   kable_styling("striped", "bordered", full_width = FALSE)
 
@@ -380,9 +395,10 @@ total_height_chart %>% kable(caption = "All Measurements in cm") %>%
 ???
 * ask if there are other questions or points to this graph
 * point to the scales as another aspect to be critical of
+* 
 ---
 
-# The Stastical Model
+# The Statistical Model
 
 * A representation of what the data tells us
 
@@ -397,6 +413,7 @@ total_height_chart %>% kable(caption = "All Measurements in cm") %>%
 
 .center[![:scale 53%](imgs/boosting-algo-7.gif)]
 ???
+
 Actuarial vs Statistical model discussion can occur.
 ---
 # Four Kinds of Analytics
@@ -436,7 +453,7 @@ Actuarial vs Statistical model discussion can occur.
 
   + What is the chance of this specific young person re offending?
 ---
-# Perscriptive  Analytics
+# Prescriptive  Analytics
 * What is the best course of action?
 .center[![The Process](imgs/Prescriptive_Analytics_process.png)]
 
@@ -508,16 +525,6 @@ Actuarial vs Statistical model discussion can occur.
 
 .center[![:scale 65%](imgs/forest_spreadsheets.jpg)]
 ---
-.center[# Tidy Data]
-* Each variable forms a column.
-* Each observation forms a row.
-* Each cell is atomic.
-* Each type of observational unit forms a table.
-
---
-
-.center[![Sad Cat](imgs/messy-data-makin-me-sad-.jpg)]
----
 .center[# Spreadsheet Use]
 * We use spreadsheets for:
 
@@ -535,19 +542,36 @@ Actuarial vs Statistical model discussion can occur.
   + And, occasionally, tables in Word
 
   + What should we use Spreadsheets for?
+???
+* who uses them
+* who doesn't
+* who wants a training?
+---
+.center[# Tidy Data]
+* Each variable forms a column.
+
+* Each observation forms a row.
+
+* Each cell is "atomic."
+
+* Each type of observational unit forms a table.
+
+--
+
+.center[![Sad Cat](imgs/messy-data-makin-me-sad-.jpg)]
 ---
 class: center
 # Exercise 4: Critique This Spreadsheet
 .center[![:scale 95%](imgs/fakeSheet.png)]
 ???
 * This spreadsheet will be a handout
-* Solo work
+* TEAM Work
 * 10-15 minutes
 * The image will remain on screens
 ---
 # Exercise 4: Takeaways
 
-* Cells are not atomic
+* Cells are not "atomic"
 
 * Missing values
 
@@ -560,16 +584,21 @@ class: center
 * Performance based budgeting
 
 * Risk Level and Classification
+
+
+--
+# Data is a langauge that we need to become fluent in.
+ 
 ---
 # Where Do We Go From Here
 * We have the language, now what are *our* goals?
 --
 
 * With your table, discuss where you want to go from here.
-
-  + Start with a question you want to answer
+  + **Everyone must have a role**
+  + Start with a question you need data to answer
   + What descriptive and diagnostic analyses do you need?
-  + Everyone must have a role
+      - What kind of analysis do you want to conduct?
   + Report back to the group
     + No longer than 60 seconds!
 
@@ -587,6 +616,7 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 
 
 ---
+
 # Sources and Further Reading
 * [Tidy data Paper](https://vita.had.co.nz/papers/tidy-data.pdf)
 * [Data Literacy](https://www.gartner.com/webinar/3702517)
@@ -599,3 +629,5 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 * [Statistical Model](https://en.wikipedia.org/wiki/Statistical_model)
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
+* [Commentary on Statistical Assessment of Violence Recidivism Risk ](https://www.tandfonline.com/doi/full/10.1080/2330443X.2015.1029338#aHR0cHM6Ly93d3cudGFuZGZvbmxpbmUuY29tL2RvaS9wZGYvMTAuMTA4MC8yMzMwNDQzWC4yMDE1LjEwMjkzMzg/bmVlZEFjY2Vzcz10cnVlQEBAMA==)
+* (Wired: COURTS ARE USING AI TO SENTENCE CRIMINALS. THAT MUST STOP NOW)[https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/]
