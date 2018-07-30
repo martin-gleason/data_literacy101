@@ -90,9 +90,9 @@ Icebreaker Exercise instructions:
 ---
 class: center
 # What Is Data? 
-.center[![](imgs/howdoyouusedata.gif)]
+.center[![:scale 70%](imgs/howdoyouusedata.gif)]
 
-.bottom[.center[What questions do you have about data?]]
+.bottom[.center[What questions do you have about data and the court?]]
 ---
 class: center, middle
 # The Bro-Map
@@ -195,6 +195,7 @@ class: center
 ???
 * Point is to break down the difference between Data and Information
 * Encourage the development of data driven culture
+* address the elephant in the room: Why do we think we don't need data?
  
 ---
 class: center
@@ -207,22 +208,23 @@ class: center
 ???
 reinforce data as new language
 ---
-class: center, middle
-# Word Cloud: Your Registration Data<sup>1</sup>
+class: center
+# Your Registration Data<sup>1</sup>
 
-```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', fig.height = 10, fig.width=10}
+```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align= "center", fig.height= 5, fig.width= 5, fig.show="hold"}
 
 source("wordcloud.R")
 
-
-question_cloud <- words_tidy %>%
+words_tidy %>%
   count(word) %>%
   with(wordcloud(word, n, min.freq = 1,
                  max.words = 25, colors = pro_colors_scheme,
                  family = "Nobile",
                  scale = c(4, 1)),
-       fill = "transparent",
-       height = 960, width =960, units = "px")
+       fill = "transparent")
+par(mar = rep(0, 4))
+
+#out.extra='style="display:block;"'
 
 ```
 
@@ -277,16 +279,18 @@ question_cloud <- words_tidy %>%
 *  *Examples?*
 --
 
-  + Binary
-  + Ordinal
-  + Nominal
-  + Geographic Location?
+  + Geographic Location/GPS
+  
+  + 2016 Election
+  
+  + Tax Bracket
 ---
 # Types of Data
 ## Probation Specific Examples
 
 * Quantitative Examples?
 
+--
   + Number of youth on probation
   
   + Number of Violations
@@ -297,6 +301,7 @@ question_cloud <- words_tidy %>%
 
 * Qualitative Examples
 
+--
   + What services is the young person ordered to attend?
   
   + Violations per district 
@@ -435,6 +440,7 @@ Actuarial vs Statistical model discussion can occur.
 * Why has the number of violations increased in this district?  
 
 * Why did this happen?  
+
 * What kind of diagnostic questions should we ask?
 
 ---
@@ -491,8 +497,10 @@ Actuarial vs Statistical model discussion can occur.
 * Forms
 --
 
+
 * Reports
 --
+
 
 * Studies
 --
@@ -519,7 +527,6 @@ Actuarial vs Statistical model discussion can occur.
 --
 
 * *Spreadsheets*
-
 --
 
 
@@ -618,11 +625,12 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 ---
 
 # Sources and Further Reading
+* [DataCamp](https://datacamp.com)
 * [Tidy data Paper](https://vita.had.co.nz/papers/tidy-data.pdf)
 * [Data Literacy](https://www.gartner.com/webinar/3702517)
 * [Algorithmic Sentencing](https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/)
 * [Descriptive, predictive, prescriptive](https://halobi.com/blog/descriptive-predictive-and-prescriptive-analytics-explained/)
-* [https://twitter.com/nlj/status/1004066012063559686](https://twitter.com/nlj/status/1004066012063559686)
+* [Google Maps as Presecriptive Data](https://twitter.com/nlj/status/1004066012063559686)
 * [4 kinds of analytics](https://www.kdnuggets.com/2017/07/4-types-data-analytics.html)
 * [Super Important Outcome](https://blogs.uoregon.edu/rclub/2016/04/05/plotting-your-logistic-regression-models/)
 * [Minitab: Flavors of Data](https://surfstat.anu.edu.au/surfstat-home/1-1-1.html)
@@ -630,4 +638,4 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
 * [Commentary on Statistical Assessment of Violence Recidivism Risk ](https://www.tandfonline.com/doi/full/10.1080/2330443X.2015.1029338#aHR0cHM6Ly93d3cudGFuZGZvbmxpbmUuY29tL2RvaS9wZGYvMTAuMTA4MC8yMzMwNDQzWC4yMDE1LjEwMjkzMzg/bmVlZEFjY2Vzcz10cnVlQEBAMA==)
-* (Wired: COURTS ARE USING AI TO SENTENCE CRIMINALS. THAT MUST STOP NOW)[https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/]
+* [Wired: COURTS ARE USING AI TO SENTENCE CRIMINALS. THAT MUST STOP NOW]([https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/)
