@@ -25,13 +25,8 @@ words_tidy <- words_untidy %>%
   unnest_tokens(word, text) %>%
   anti_join(get_stopwords())
 
-question_cloud <- words_tidy %>%
-  count(word) %>%
-  with(wordcloud(word, n, min.freq = 1,
-                 max.words = 25, colors = pro_colors_scheme,
-                 family = "Nobile",
-                 scale = c(4, 1)),
-       fill = "transparent")
+
+
 
 wc2 <- words_tidy %>%
   count(word) %>%
