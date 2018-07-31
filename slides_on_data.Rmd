@@ -393,7 +393,7 @@ total_height_sex_histogram +
         legend.text = element_text(family = "Nobile", size = 20),
         legend.title = element_text(family = "Nobile", size = 20))
 
-total_height_chart %>% kable(caption = "All Measurements in cm") %>% 
+total_height_chart %>% kable(caption = "All Measurements in Inches") %>% 
   kable_styling("striped", "bordered", full_width = FALSE)
 
 ```
