@@ -28,6 +28,10 @@ words_tidy <- words_untidy %>%
 
 
 
-# wc2 <- words_tidy %>%
-#   count(word) %>%
-#   wordcloud2(fontFamily = "Nobile", color = pro_colors_scheme2, size = 1)
+wc2 <- words_tidy %>%
+  count(word) %>%
+  arrange(desc(n)) %>%
+  wordcloud2(fontFamily = "Nobile",
+             color = pro_colors_scheme2,
+             backgroundColor = "transparent",
+             size = 1)
