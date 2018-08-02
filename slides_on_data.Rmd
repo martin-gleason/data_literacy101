@@ -383,7 +383,7 @@ Question: how best to
 mode: can have 0 to n 
 ---
 ## Best Practices: Visualization
-```{r, correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
+```{rd correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
 
 total_height_sex_histogram +
     theme(panel.spacing = unit(5, "lines"))+
@@ -420,6 +420,11 @@ total_height_chart %>% kable(caption = "All Measurements in Inches") %>%
 ???
 
 Actuarial vs Statistical model discussion can occur.
+
+* Actuarial instruments attach specific statistical weighting to different variables which assess the risk.
+* A key defining aspect of actuarial instruments is that scores obtained on individuals can be related to statistical reference data.
+* ARAI are based on stats and stat modeling and work on predictive, whre stat models work on work on classifcation, predictive, and prescriptive
+[source](http://www.corinederuiter.eu/risk.php)
 ---
 # Four Kinds of Analytics
 
@@ -530,7 +535,7 @@ Actuarial vs Statistical model discussion can occur.
 --
 
 
-.center[![:scale 65%](imgs/forest_spreadsheets.jpg)]
+.center[![:scale 45%](imgs/eyeore.jpg)]
 ---
 .center[# Spreadsheet Use]
 * We use spreadsheets for:
@@ -543,7 +548,11 @@ Actuarial vs Statistical model discussion can occur.
 
   + Data Analysis
 
-* In our office, we use Excel
+---
+.center[# Spreadsheet Use]
+* In our office we use
+  + Excel (2003, 2007, 2013, 2016)
+  
   + Google Sheets
 
   + And, occasionally, tables in Word
@@ -617,7 +626,7 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 # Thank you
 .center[![Thank You](imgs/anyQuestionsDavidSPumpkins.gif)]
 
-* Please fill out your evaluation forms
+* Check your email for your evaluation forms
 * Email [martin.gleason@cookcountil.gov](mailto: martin.gleason@cookcountil.gov) if you have questions, comments, or vague misgivings
 
 
@@ -625,6 +634,7 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 ---
 
 # Sources and Further Reading
+
 * [DataCamp](https://datacamp.com)
 * [Tidy data Paper](https://vita.had.co.nz/papers/tidy-data.pdf)
 * [Data Literacy](https://www.gartner.com/webinar/3702517)
@@ -637,5 +647,9 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 * [Statistical Model](https://en.wikipedia.org/wiki/Statistical_model)
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
+---
+
 * [Commentary on Statistical Assessment of Violence Recidivism Risk ](https://www.tandfonline.com/doi/full/10.1080/2330443X.2015.1029338#aHR0cHM6Ly93d3cudGFuZGZvbmxpbmUuY29tL2RvaS9wZGYvMTAuMTA4MC8yMzMwNDQzWC4yMDE1LjEwMjkzMzg/bmVlZEFjY2Vzcz10cnVlQEBAMA==)
 * [Wired: COURTS ARE USING AI TO SENTENCE CRIMINALS. THAT MUST STOP NOW]([https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/)
+
+* [A Comparision of Risk Assessments](http://www.nccdglobal.org/sites/default/files/publication_pdf/nccd_fire_report.pdf)
