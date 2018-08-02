@@ -1,0 +1,11 @@
+---
+title: "Untitled"
+author: "Martin Gleason, MS"
+date: "8/1/2018"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+require(tidyverse)
+(iris %>% ggplot(aes(x = Sepal.Length, y = Sepal.Width, fill = Species)) + geom_bar(stat="identity"))
+```
