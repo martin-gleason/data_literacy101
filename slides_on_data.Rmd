@@ -363,7 +363,7 @@ class:center
 * One volunteer<sup>1</sup> to document how tall everyone is
   + In inches
   
-* We will calculate:
+* We will [calculate](https://allcomicsconsideredstats.shinyapps.io/shiny_mean/):
 --
 
   + *Range: Minimum number to maximum number.*
@@ -383,7 +383,7 @@ Question: how best to
 mode: can have 0 to n 
 ---
 ## Best Practices: Visualization
-```{rd correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
+```{r correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
 
 total_height_sex_histogram +
     theme(panel.spacing = unit(5, "lines"))+
