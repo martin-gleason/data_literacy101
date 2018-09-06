@@ -8,11 +8,11 @@ library("sysfonts")
 library("tidytext")
 library("showtext")
 
-
+url <- "https://docs.google.com/spreadsheets/d/1HdAUfbLAusvCUX-hQXUJuckv1-VeUyDn3KqoK2YuK_E/edit#gid=1285998547"
 font_add_google(name = "Nobile")
 source("../scripts/color_scheme.R")
 
-responses <- gs_url("https://docs.google.com/spreadsheets/d/1oqOAeku8K8JGb31U8HGHu6PsAaxGWdtFxZFLUKtDlpE/edit#gid=1115118292")
+responses <- gs_url(url)
 
 sheet <- gs_read(responses)
 email <- sheet$`Email Address`
