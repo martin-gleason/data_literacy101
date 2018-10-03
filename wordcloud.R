@@ -8,7 +8,7 @@ library("sysfonts")
 library("tidytext")
 library("showtext")
 
-url <- "https://docs.google.com/spreadsheets/d/1HdAUfbLAusvCUX-hQXUJuckv1-VeUyDn3KqoK2YuK_E/edit#gid=1285998547"
+url <- "https://docs.google.com/spreadsheets/d/1bN3ZZ1hVDD_VDCEtYmMYnIocaWkHn1gOsKs5r5Dt44A/edit#gid=1528966377"
 font_add_google(name = "Nobile")
 source("../scripts/color_scheme.R")
 
