@@ -2,11 +2,13 @@
 title: "Data Literacy"
 subtitle: "Or A Data 101 Training for Juvenile Probation Staff"
 author: "Martin Gleason, MS"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   xaringan::moon_reader:
-    css: ["pro_presentation.css", "libs/remark-css/default.css"]
+    css: ["libs/remark-css/default.css", "pro_presentation.css"]
     self_contained: no
     lib_dir: libs
+    seal: false
     nature:
       beforeInit: "macros.js"
       highlightStyle: github
@@ -14,31 +16,53 @@ output:
       countIncrementalSlides: false
 ---
 ```{r, packages, include=T, echo=FALSE, message = FALSE, warning = FALSE}
-library(tidyverse)
+library(tidyverse) 
 library(lubridate)
 library(kableExtra)
 library(viridis)
 library(plotly)
 library(xaringan)
-source("normal_height.R") 
+library("sysfonts")
+library("showtext")
+source("normal_height.R")
+
+
 # figure out how to make sure it works on windows or mac
-# need to fix formating data
-# need to fix git
+# need to fix formating data  ssh-add ~/.ssh/id_rsa
+# need to fix gitv
 
 ```
-class:center
-# Data Literacy: A Data 101 Training for Juvenile Probation Staff
-`r today() %>% format("%m-%d-%y")`
+class: title-slide
+class: inverse, center
+# Data Literacy for Court Staff
+## OR Data 101 for Court Staff
+
+
+.center[*Sit back, relax. The training is about to begin!*]
+
+.center[<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLlcpS_fiQECCWSmK5Uom236PXE6hEVz22" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]
+
+.bottom[.right[`r today() %>% format("%A, %B %d %Y")`]]
+
+
+???
+YouTube is for set up me, really.
+# Materials needed for in-person training:
+* paper for notes/exercises
+* 5 + attendees copy of bad spreadsheet data
+
 ---
-.center[#Training Ground Rules]
+class: inverse
 
-*  Take care of your clients and cases
+# Icebreaker Activity
+* Line up according to birthday: Month, Day (no need for age)
 
-*  Two breaks are built in, but get up and go if you need to
+* No VERBAL or WRITTEN communication allowed
 
-*  Ask questions, even ones that seem obvious
-
-*  Be willing to be challenged
+.center[![:scale 55%](imgs/icebreaker.jpg)]
+???
+1) Discuss importance of communication
+2) lighten the mood
 ---
 .center[#Learning Objectives:]
 
@@ -53,49 +77,64 @@ class:center
 *  What we can do to improve our Data Quality
 
 *  To discover what you want to learn next
+???
+Icebreaker Exercise instructions: 
+* Have everyone line up by birthday, descending, without speaking
+* the point is to illustrate how critical language is to easy exchange of knowledge 
 ---
-.center[# Expectations
-![](imgs/schoolHouseRock.gif)]
+.center[# Expectations]
+.center[![](imgs/schoolHouseRock.gif)]
 
 
 .bottom[.center[What do **you** want to learn today?]]
 ---
 class: center
 # What Is Data? 
-.center[![](imgs/howdoyouusedata.gif)]
+.center[![:scale 70%](imgs/howdoyouusedata.gif)]
 
-.bottom[.center[What questions do you have about data?]]
+.bottom[.center[What questions do you have about data and the court?]]
 ---
-class: center
+class: center, middle
 # The Bro-Map
 
-.pull-left[
-![](imgs/bro.gif)]
 
-.pull-right[.left[
-Excercise 1: How do you use data?
+.center[![:scale 110%](imgs/bro.gif)]
+
+---
+### Exercise: How do you use data?
 
 {{content}}
-]]
+
 
 --
 
-* Can be alone or in a group.
-{{content}}
+* At your table.
 
-* Take five minutes to note how you use personal **or** probation data.
+* Take the allotted time to note how you use personal **or** probation data.
+
+* Write it down!
+
+  + You will need it soon!
+
+???
+* 10-15 minutes
+* remind them to hold on to this
+* materials required will include: Paper!
 ---
 class: center
 # Sharing is Caring
-.center[![(imgs/giphy.gif)]]
+.center[![:scale 59%](imgs/sharingiscaring.jpg)]
 
 
-.center[Who wants to share how they use data?]
+.center[## Who wants to share how they use data?]
+
+???
+* Ask staff to share how they use data
 ---
 class: center
 # Data or Information
   
-.pull-left[.left[Data: 
+.left[Data: 
 * Facts, figures, and other abstract representations of the world
   + Height
 
@@ -103,9 +142,13 @@ class: center
 
   + Number of Charges
 
-  + Length of Term of Probation]]
+  + Length of Term of Probation
 
-.pull-right[.left[Information:
+  + Demographics]
+---
+class: center
+# Data or Information
+.left[Information:
 * Data that has been processed, given structure, and context
   + Charts and graphs
 
@@ -113,49 +156,117 @@ class: center
 
       - Credit
 
-      - Probation
+      - Census
 
   + Body Mass Index (BMI)
 
-      - [Far From Perfect Model](https://www.npr.org/templates/story/story.php?storyId=106268439)]]
+      - [Far From Perfect Model](https://www.npr.org/templates/story/story.php?storyId=106268439)]
+---
+# Data or Information
+
+* Exercise: Revisit the *How do you use data.*
+
+* Reclassify items as "Data or Information"
+
+.center[![:scale 55%](imgs/classification.jpg)]
 ---
 # How much data do we need?
 --
 
 
-*  Pros and cons of Personal Experience
+* Pros and cons of Personal Experience
 --
 
 
-*  Professional/Clinical Judgement
+* Professional/Clinical Judgment
 --
 
 
   + *Challenging either can be easily interpreted as a personal attack*
 --
  
+  + *Why not just collect all the data?*
  
-* **Therefore, a better question is: What data do we need?**    
+ 
+* **A better question is: What data do we need?**    
 
 
 .center[![](imgs/toomuch.gif)]
+???
+* Point is to break down the difference between Data and Information
+* Encourage the development of data driven culture
+* address the elephant in the room: Why do we think we don't need data?
+ 
 ---
 class: center
 # The Language of Data
-.pull-left[![:scale 80%](imgs/DataScienceTriangleAnalogy.jpg)]
-.pull-right[![:scale 80%](imgs/DataScienceTriangle.jpg)]
-##Think of data and information as a new language that requires fluency
+.pull-left[![:scale 100%](imgs/DataScienceTriangleAnalogy.jpg)]
+.pull-right[![:scale 100%](imgs/DataScienceTriangle.jpg)]
+</br>
+</br>
+### Think of data and information as a new language that requires fluency
+???
+reinforce data as new language
+---
+class: center
+# Your Registration Data<sup>1</sup>
+
+```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align= "center", fig.height= 5, fig.width= 5, fig.show="hold"}
+
+source("wordcloud.R")
+
+words_tidy %>%
+  count(word) %>%
+  with(wordcloud(word, n, min.freq = 1,
+                 max.words = 25, colors = pro_colors_scheme,
+                 family = "Nobile",
+                 scale = c(4, 1)),
+       fill = "transparent")
+par(mar = rep(0, 4))
+
+#out.extra='style="display:block;"'
+
+```
+
+.footnote[
+#####[1]From a total of `r length(unique(email))` registrants.]
+
+???
+* Wordcloud for discussion of metric and data
+* illustrates expectations
 ---
 # Types of Data
---
-.left[## Quantitative]
+## Quantitative
+
 *  Discrete: only specific values matter for that data
+
 *  Continuous: All values
+
 *  *Examples?*
+
+  + Height
 --
-.left[## Qualitative]
-*  *Examples?*
+
+
+  + Weight
+
+
 --
+  + Age
+
+
+--
+
+
+  + Income Data
+--
+
+
+  + Blood Pressure
+---
+# Types of Data
+
+## Qualitative
 
 *  Binary: Yes/No
 
@@ -164,12 +275,57 @@ class: center
 *  Ordinal: Scores or Ranks
 
 *  Count/Ratio: Items per Area/Volume
----
-class: center
-background-image: url(imgs/coffee.jpg)
-background-size: cover;
-#The Coffee Example
 
+*  *Examples?*
+--
+
+  + Geographic Location/GPS
+  
+  + 2016 Election
+  
+  + Tax Bracket
+---
+# Types of Data
+## Probation Specific Examples
+
+* Quantitative Examples?
+
+--
+  + Number of youth on probation
+  
+  + Number of Violations
+  
+  + Number of service agencies
+
+--
+
+* Qualitative Examples
+
+--
+  + What services is the young person ordered to attend?
+  
+  + Violations per district 
+  
+  + Termination Status
+
+---
+class: center, middle
+#The Coffee Example
+.center[![:scale 110%](imgs/coffee.jpg)]
+
+???
+* coffee as discrete, continuous, and categorical(binary) data.
+---
+# Morning Beverage Excercise
+
+* What do you drink every morning?
+
+* How much do you drink every morning
+  
+  + In discrete terms.
+  + In continuous terms.
+  
+.center[![:scale 65%](imgs/tomHanksJuice.gif)]
 ---
 class:center
 # Descriptive Statistics
@@ -179,7 +335,8 @@ class:center
 .right[[--Investopedia](https://www.investopedia.com/terms/d/descriptive_statistics.asp)]
 
 ---
-# Measures of Central Tendency and Variablity
+# Measures of Central Tendency and Variability
+
 
 * Mean: Average
 --
@@ -194,69 +351,59 @@ class:center
 
 
 * Range: Minimum number to maximum number
+
+
+???
+* Ask why these are useful measures for us
+* point to JDAI stats, detention stats
+* dis-aggregating data by race was a huge push for JDAI, what else should we separate?
+---
+
+# Terms in Practice: With Height!
+* One volunteer<sup>1</sup> to document how tall everyone is
+  + In inches
+  
+* We will [calculate](https://allcomicsconsideredstats.shinyapps.io/shiny_mean/):
 --
 
+  + *Range: Minimum number to maximum number.*
+  
+  + *Mean: Add up all the numbers, divide by the amount of entries.*
+  
+  + *Median: Mid point in the heights*
+  
+  + *Mode: Most frequent number*
 
-* Variance: How spread out the data points are
---
+</br>
+</br>
+.footnote[[1] Or voluntold, I'm not picky.]
+???
+Volunteer/voluntold
+Question: how best to 
+mode: can have 0 to n 
+---
+## Best Practices: Visualization
+```{r correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
 
+total_height_sex_histogram +
+    theme(panel.spacing = unit(5, "lines"))+
+  facet_grid(~ Sex)+
+  theme(axis.text = element_text(family = "Nobile", size = 20 ),
+        axis.title = element_text(family = "Nobile", size = 20 ),
+        legend.text = element_text(family = "Nobile", size = 20),
+        legend.title = element_text(family = "Nobile", size = 20))
 
-* Standard Deviation: The distance, in the same unit, between data points
----
-class:center
-# Total Height
-```{r, TrickQuestion_one, include= TRUE, echo = F, fig.align='center', fig.height = 6, fig.width = 8,message = FALSE}
-total_height_bar
-```
----
-class:center
-## Density of Height
-```{r, TrickQuestion_two, include= TRUE, fig.align='center', fig.height = 6, fig.width = 8, echo = F}
-total_height
-```
----
-class:center
-## Measures of Central Tendency with Height
-```{r, trickquestionThree, include = TRUE, echo = FALSE, fig.align='center', fig.height = 6, fig.width = 8, message = FALSE}
-bad_proof
-```
----
-## Chart Example
-```{r, badchart, include = TRUE, echo = FALSE, warning = FALSE, fig.align='center', fig.height = 6, fig.width = 6, message = FALSE}
-bad_height %>% kable() %>% kable_styling("striped", "bordered", full_width = TRUE)
-```
----
-## Excercise 2: How did I mislead you?
-```{r, side_by_side, include = TRUE, warning = FALSE, out.width="49%", fig.height = 15, fig.width = 15, fig.show = "hold", message = FALSE, echo = FALSE}
-total_height + theme(axis.text = element_text(family = "Nobile", size = 48 ),
-        axis.title = element_text(family = "Nobile", size = 48 ))
-
-total_height_bar + theme(axis.text = element_text(family = "Nobile", size = 48 ),
-        axis.title = element_text(family = "Nobile", size = 48 ))
-```
----
-## Correct Way to Visualize
-```{r, correct_viz, include = TRUE, echo = FALSE, out.width="50%", message = FALSE, fig.align='center', fig.height = 4, fig.width = 6, message = FALSE}
-
-total_height_sex_histogram
-total_height_chart %>% kable(caption = "All Measurements in cm") %>% 
+total_height_chart %>% kable(caption = "All Measurements in Inches") %>% 
   kable_styling("striped", "bordered", full_width = FALSE)
 
 ```
+???
+* ask if there are other questions or points to this graph
+* point to the scales as another aspect to be critical of
+* 
 ---
-class: center
-background-image: url(imgs/break.gif)
-# Take a break
----
-.center[# The Training So Far]
 
-* Measures of Central Tendency.
-
-* Measures of Variance.
-
-* **How to think critically about data?**
----
-# The Stastical Model
+# The Statistical Model
 
 * A representation of what the data tells us
 
@@ -270,11 +417,20 @@ background-image: url(imgs/break.gif)
 --
 
 .center[![:scale 53%](imgs/boosting-algo-7.gif)]
+???
+
+Actuarial vs Statistical model discussion can occur.
+
+* Actuarial instruments attach specific statistical weighting to different variables which assess the risk.
+* A key defining aspect of actuarial instruments is that scores obtained on individuals can be related to statistical reference data.
+* ARAI are based on stats and stat modeling and work on predictive, whre stat models work on work on classifcation, predictive, and prescriptive
+[source](http://www.corinederuiter.eu/risk.php)
 ---
 # Four Kinds of Analytics
 
 * Descriptive: What?
-    + Very similiar to descriptive statistics.
+    + Very similar to descriptive statistics.
+    + Examples of probation descriptive statistics?
 
 * Diagnostic: Why? 
 
@@ -283,8 +439,15 @@ background-image: url(imgs/break.gif)
 * Prescriptive: Best course?
 ---
 ## Diagnostic Analytics
-* Why did this happen?
+
 .center[![Do not be afraid to ask why.](imgs/why.gif)]
+
+* Why has the number of violations increased in this district?  
+
+* Why did this happen?  
+
+* What kind of diagnostic questions should we ask?
+
 ---
 ## Predictive Analytics
 * What could happen
@@ -298,15 +461,22 @@ background-image: url(imgs/break.gif)
 
 
 .center[![:scale 60%](imgs/superimportantoutcome.png)]
+
+  + What is the chance of this specific young person re offending?
 ---
-# Perscriptive  Analytics
+# Prescriptive  Analytics
 * What is the best course of action?
 .center[![The Process](imgs/Prescriptive_Analytics_process.png)]
+
+* What is the best service/intervention for this young person to reduce their level of risk?
+
 ---
-## Excercise 3: Discussion of Perscriptive Statistics
+## Exercise 3: Discussion of Prescriptive Statistics
 --
 
-.center[![:scale 55%](imgs/unicorn.gif)]
+.center[![:scale 70%](imgs/scrouge.gif)]
+
+* This is what all of our models are attempting to answer
 ---
 # How do we collect data or information?
 --
@@ -340,36 +510,32 @@ background-image: url(imgs/break.gif)
 * Studies
 --
 
+* JEMS/C5/Supervisor
 
-* JEMS
+* Assessment Tools
 --
-
 
 * Other Systems
     + I-Clear
     + Clerks
-    + State's Attorney
+    + Crimes (State's Attorneys)
     + Schools
     + Hospital
     + Promise
---
+    
+---
+#How do we store Data
 
+* Word Documents 
 
 * Databases
 --
 
-
 * *Spreadsheets*
----
-.center[# Tidy Data]
-* Each variable forms a column.
-* Each observation forms a row.
-* Each cell is atomic.
-* Each type of observational unit forms a table.
-
 --
 
-.center[![Sad Cat](imgs/messy-data-makin-me-sad-.jpg)]
+
+.center[![:scale 45%](imgs/eyeore.jpg)]
 ---
 .center[# Spreadsheet Use]
 * We use spreadsheets for:
@@ -382,20 +548,46 @@ background-image: url(imgs/break.gif)
 
   + Data Analysis
 
-* In our office, we use Excel
+---
+.center[# Spreadsheet Use]
+* In our office we use
+  + Excel (2003, 2007, 2013, 2016)
+  
   + Google Sheets
 
-  + And, occassionally, tables in Word
+  + And, occasionally, tables in Word
 
   + What should we use Spreadsheets for?
+???
+* who uses them
+* who doesn't
+* who wants a training?
+---
+.center[# Tidy Data]
+* Each variable forms a column.
+
+* Each observation forms a row.
+
+* Each cell is "atomic."
+
+* Each type of observational unit forms a table.
+
+--
+
+.center[![Sad Cat](imgs/messy-data-makin-me-sad-.jpg)]
 ---
 class: center
-# Excercise 4: Critique This Spreadsheet
-.center[![:scale 75%](imgs/fakeSheet.png)]
+# Exercise 4: Critique This Spreadsheet
+.center[![:scale 95%](imgs/fakeSheet.png)]
+???
+* This spreadsheet will be a handout
+* TEAM Work
+* 10-15 minutes
+* The image will remain on screens
 ---
-# Excercise 4: Takeaways
+# Exercise 4: Takeaways
 
-* Cells are not atomic
+* Cells are not "atomic"
 
 * Missing values
 
@@ -408,39 +600,56 @@ class: center
 * Performance based budgeting
 
 * Risk Level and Classification
+
+
+--
+# Data is a langauge that we need to become fluent in.
+ 
 ---
 # Where Do We Go From Here
 * We have the language, now what are *our* goals?
 --
 
-
-
 * With your table, discuss where you want to go from here.
---
-
-
+  + **Everyone must have a role**
+  + Start with a question you need data to answer
+  + What descriptive and diagnostic analyses do you need?
+      - What kind of analysis do you want to conduct?
+  + Report back to the group
+    + No longer than 60 seconds!
 
 * Use your SMART goals!
+???
+This is supposed to be the L2 activity: ensure that people are leaving understanding some of this data.
+
 ---
 # Thank you
 .center[![Thank You](imgs/anyQuestionsDavidSPumpkins.gif)]
 
-* Please fill out your evaluation forms
+* Check your email for your evaluation forms
 * Email [martin.gleason@cookcountil.gov](mailto: martin.gleason@cookcountil.gov) if you have questions, comments, or vague misgivings
 
 
 
-
 ---
+
 # Sources and Further Reading
+
+* [DataCamp](https://datacamp.com)
 * [Tidy data Paper](https://vita.had.co.nz/papers/tidy-data.pdf)
 * [Data Literacy](https://www.gartner.com/webinar/3702517)
 * [Algorithmic Sentencing](https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/)
 * [Descriptive, predictive, prescriptive](https://halobi.com/blog/descriptive-predictive-and-prescriptive-analytics-explained/)
-* [https://twitter.com/nlj/status/1004066012063559686](https://twitter.com/nlj/status/1004066012063559686)
+* [Google Maps as Presecriptive Data](https://twitter.com/nlj/status/1004066012063559686)
 * [4 kinds of analytics](https://www.kdnuggets.com/2017/07/4-types-data-analytics.html)
 * [Super Important Outcome](https://blogs.uoregon.edu/rclub/2016/04/05/plotting-your-logistic-regression-models/)
 * [Minitab: Flavors of Data](https://surfstat.anu.edu.au/surfstat-home/1-1-1.html)
 * [Statistical Model](https://en.wikipedia.org/wiki/Statistical_model)
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
+---
+
+* [Commentary on Statistical Assessment of Violence Recidivism Risk ](https://www.tandfonline.com/doi/full/10.1080/2330443X.2015.1029338#aHR0cHM6Ly93d3cudGFuZGZvbmxpbmUuY29tL2RvaS9wZGYvMTAuMTA4MC8yMzMwNDQzWC4yMDE1LjEwMjkzMzg/bmVlZEFjY2Vzcz10cnVlQEBAMA==)
+* [Wired: COURTS ARE USING AI TO SENTENCE CRIMINALS. THAT MUST STOP NOW]([https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/)
+
+* [A Comparision of Risk Assessments](http://www.nccdglobal.org/sites/default/files/publication_pdf/nccd_fire_report.pdf)

@@ -2,3 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+.httr-oauth
+test.html
+<<<<<<< HEAD
+=======
+test.Rmd
+>>>>>>> gh-pages
