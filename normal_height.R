@@ -12,7 +12,7 @@ height_cm <- read_csv(file_location)
 
 height <- height_cm %>% select(height, Sex = sex)
 
-height[1] <- height[1] * 2.54
+height[1] <- height[1] * 0.393701
 
 height_quants <- height %>% summarise(q5 = quantile(height, .05),
                                       q95 = quantile(height, .95),
