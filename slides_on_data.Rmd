@@ -37,8 +37,7 @@ class: inverse, center
 # Data Literacy for Court Staff
 ## Or Data 101: An E-Learning for Juvenile Probation Staff
 
-
-.center[*Sit back, relax. The training is about to begin!*]
+ 
 
 
 ---
@@ -57,40 +56,9 @@ class: inverse, center
 *  To discover what you want to learn next
 
 ---
-.center[# Expectations]
-.center[![](imgs/schoolHouseRock.gif)]
-
-
-.bottom[.center[What do **you** want to learn today?]]
----
-class: center
-# Your Registration Data<sup>1</sup>
-
-```{r, word_cloud, include = TRUE, message = FALSE, warning = FALSE, echo = FALSE, fig.align= "center", fig.height= 5, fig.width= 5, fig.show="hold"}
-
-source("wordcloud.R")
-
-words_tidy %>%
-  count(word) %>%
-  with(wordcloud(word, n, min.freq = 1,
-                 max.words = 25, colors = pro_colors_scheme,
-                 family = "Nobile",
-                 scale = c(4, 1)),
-       fill = "transparent")
-par(mar = rep(0, 4))
-
-```
-
-.footnote[
-#####[1]From a total of `r length(unique(email))` registrants.]
-
-???
-* Wordcloud for discussion of metric and data
-* illustrates expectations
----
 class: center
 # What Is Data? 
-.center[![:scale 70%](imgs/howdoyouusedata.gif)]
+.center[![:scale 60%](imgs/howdoyouusedata.gif)]
 
 .bottom[.center[What questions do you have about data and the court?]]
 ???
@@ -110,9 +78,10 @@ class: center, middle
   * Natural Language/Linguistic
   * Maps!
   
-* Creates new information
-  * What slang do we tend to use
+* Visualizes new information
+  * What slang is is used where
   
+   
 * How could this be useful?
   * Marketers
   * Demographers/Researchers
@@ -125,15 +94,15 @@ class: center, middle
 .pull-left[![:scale 100%](imgs/data_action.png)]
 
 .pull-right[
-* Taking new forms of data
+* Collect and store data
 
-* Creating new forms of information
+* Which is transformed into information
 
-* Which foster new insight
+* Which fosters new insight
 
-* Which direct actions
+* Which lead to direct actions
 
-* That have better results
+* That (should) have better results
 ]
 
 ---
@@ -142,20 +111,22 @@ class: center
   
 .left[Data: 
 * Facts, figures, and other abstract representations of the world
-  + Height
-
-  + Weight
+  + Height/Weight
 
   + Number of Charges
 
   + Length of Term of Probation
 
-  + Demographics]
+  + Demographics
+  
+* Data is a mathematical representation of the real world]
 ---
 class: center
 # Data or Information
 .left[Information:
-* Data that has been processed, given structure, and context
+* Data that has been processed, structure, and context
+  + Reports
+ 
   + Charts and graphs
 
   + Risk Level
@@ -175,9 +146,9 @@ class: center
   
   * Properly collected data represents multiple views
   
-  * If personal experience varies from the data, it leads to a great question
+  * If personal experience varies from the data, it leads to great questions and avenues to explore
   
-  * **Why?**
+    + It does not mean the data is bad
   
 ---
 # Data Vs Experience
@@ -186,6 +157,8 @@ class: center
 
 --
 * Being critical of data collection and transformation is increasingly important in our society
+
+  + Being critical is not the same as rejecting all datas
 
 * Your expeirences are vital to the discussion. So is the data.
 
@@ -199,9 +172,10 @@ class: center
 * Why not just collect all the data?
   * Security
   * Cost in processing
+  * Storage cost is not typically an issue
+    + But data privacy laws are
  
 * **A better question is: What data do we need?**    
-
 
 .center[![](imgs/toomuch.gif)]
 
@@ -212,9 +186,6 @@ class: center
 .pull-right[![:scale 100%](imgs/DataScienceTriangle.jpg)]
 </br>
 </br>
-### Think of data and information as a new language that requires fluency
-???
-reinforce data as new language
 ---
 
 # Types of Data
@@ -226,10 +197,11 @@ reinforce data as new language
 
 *  *Examples?*
 
-  + Height
 --
-
-
+  + Height
+  
+  
+--
   + Weight
 
 
@@ -238,12 +210,10 @@ reinforce data as new language
 
 
 --
-
-
   + Income Data
+  
+  
 --
-
-
   + Blood Pressure
 ---
 # Types of Data
@@ -270,23 +240,30 @@ reinforce data as new language
 # Types of Data
 ## Probation Specific Examples
 
-* Quantitative Examples?
+* Quantitative Examples
 
 --
   + Number of youth on probation
   
   + Number of Violations
-  
+    + By Officer
+    
   + Number of service agencies
 
---
+---
+# Types of Data
+## Probation Specific Examples
 
 * Qualitative Examples
 
 --
   + What services is the young person ordered to attend?
   
-  + Violations per district 
+  + Violations of Probation 
+  
+      + Per district
+      
+      + Per Division
   
   + Termination Status
 
@@ -298,7 +275,7 @@ class: center, middle
 ???
 * coffee as discrete, continuous, and categorical(binary) data.
 ---
-# Morning Beverage Excercise
+# Morning Beverage Quiz
 
 * What do you drink every morning?
 
@@ -341,28 +318,21 @@ class:center
 * dis-aggregating data by race was a huge push for JDAI, what else should we separate?
 ---
 
-# Terms in Practice: With Height!
-* One volunteer<sup>1</sup> to document how tall everyone is
-  + In inches
-  
-* We will [calculate](https://allcomicsconsideredstats.shinyapps.io/shiny_mean/):
---
+# Terms in Practice: [Shiny](https://shiny.rstudio.com) App
 
-  + *Range: Minimum number to maximum number.*
-  
-  + *Mean: Add up all the numbers, divide by the amount of entries.*
-  
-  + *Median: Mid point in the heights*
-  
-  + *Mode: Most frequent number*
+* Use this web app to [calculate](https://allcomicsconsideredstats.shinyapps.io/shiny_mean/) mean, median, mode and range.
 
-</br>
-</br>
-.footnote[[1] Or voluntold, I'm not picky.]
-???
-Volunteer/voluntold
-Question: how best to 
-mode: can have 0 to n 
+## Instructions
+
+* Enter whole numbers
+
+* Seperate numbers with white space
+
+  * 44 56 
+  
+  * not 44, 56
+  
+The app will give you the measurs of central tendency and a chart
 ---
 ## Best Practices: Visualization
 ```{r correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
@@ -384,21 +354,18 @@ total_height_chart %>% kable(caption = "All Measurements in Inches") %>%
 * point to the scales as another aspect to be critical of
 * 
 ---
-
 # The Statistical Model
 
-* A representation of what the data tells us
+* A mathematical representation of what ALL the data tells us
 
-* The goal of:
+* Is a huge part of:
 
   + Big Data
-
   + Machine Learning
-
   + AI
---
-
-.center[![:scale 53%](imgs/boosting-algo-7.gif)]
+  + Risk Assessments
+      + Including: JRA, YASI, and JSOAP
+.center[![:scale 52%](imgs/boosting-algo-7.gif)]
 ???
 
 Actuarial vs Statistical model discussion can occur.
@@ -408,37 +375,48 @@ Actuarial vs Statistical model discussion can occur.
 * ARAI are based on stats and stat modeling and work on predictive, whre stat models work on work on classifcation, predictive, and prescriptive
 [source](http://www.corinederuiter.eu/risk.php)
 ---
+# Model Fitting
+.center[![:scale 100%](imgs/boosting-algo-7.gif)]
+
+---
 # Four Kinds of Analytics
 
 * Descriptive: What?
-    + Very similar to descriptive statistics.
-    + Examples of probation descriptive statistics?
+    + Very similar to descriptive statistics
+--
 
-* Diagnostic: Why? 
+* Diagnostic: Why?
+    + Next step model creation
+--
 
 * Predictive: What if?
+    + What many models are created for
+--
 
 * Prescriptive: Best course?
+    + The end goal
 ---
 ## Diagnostic Analytics
 
 .center[![Do not be afraid to ask why.](imgs/why.gif)]
 
+* Why did this happen?
+
 * Why has the number of violations increased in this district?  
 
-* Why did this happen?  
-
-* What kind of diagnostic questions should we ask?
+    + What kind of diagnostic questions should we ask?
 
 ---
 ## Predictive Analytics
-* What could happen
+* What could happen.
 
-  + Chances of winning an election
+  +  Focus on the probabilties of *an event occuring*
 
-  + Chances of developing an illness
+* Chances of winning an election
 
-  + Chance at re-offending
+* Chances of developing an illness
+
+* Chance at re-offending
 --
 
 
@@ -504,7 +482,6 @@ Actuarial vs Statistical model discussion can occur.
     + Schools
     + Hospital
     + Promise
-    
 ---
 #How do we store Data
 
@@ -519,7 +496,22 @@ Actuarial vs Statistical model discussion can occur.
 
 .center[![:scale 45%](imgs/eyeore.jpg)]
 ---
+# How We Store Data
+
+* Tabluar Data
+  + Data in a table format
+
+* Word Document/Text is for reporting, not storing raw data
+
+* Does not do basic Spreadsheet Functions
+
+.center[![:scale 45%](imgs/word_table.gif)]
+
+---
 .center[# Spreadsheet Use]
+* In our office we use
+  + Excel (2003, 2007, 2013, 2016)
+
 * We use spreadsheets for:
 
   + Collection, cleaning, results, analysis
@@ -531,21 +523,7 @@ Actuarial vs Statistical model discussion can occur.
   + Data Analysis
 
 ---
-.center[# Spreadsheet Use]
-* In our office we use
-  + Excel (2003, 2007, 2013, 2016)
-  
-  + Google Sheets
-
-  + And, occasionally, tables in Word
-
-  + What should we use Spreadsheets for?
-???
-* who uses them
-* who doesn't
-* who wants a training?
----
-.center[# Tidy Data]
+# Tidy Data
 * Each variable forms a column.
 
 * Each observation forms a row.
@@ -559,13 +537,9 @@ Actuarial vs Statistical model discussion can occur.
 .center[![Sad Cat](imgs/messy-data-makin-me-sad-.jpg)]
 ---
 class: center
-# Exercise 4: Critique This Spreadsheet
+# Quiz 2: Critique This Spreadsheet
 .center[![:scale 95%](imgs/fakeSheet.png)]
-???
-* This spreadsheet will be a handout
-* TEAM Work
-* 10-15 minutes
-* The image will remain on screens
+
 ---
 # Exercise 4: Takeaways
 
@@ -575,7 +549,7 @@ class: center
 
 * Variable formats within entries
 ---
-# Why Do We Need Data: Takeaways
+# Why Do We Need Data: Recap
 
 * Evidence Based Practices
 
@@ -583,26 +557,11 @@ class: center
 
 * Risk Level and Classification
 
-
 --
 # Data is a langauge that we need to become fluent in.
  
----
-# Where Do We Go From Here
-* We have the language, now what are *our* goals?
---
 
-* With your table, discuss where you want to go from here.
-  + **Everyone must have a role**
-  + Start with a question you need data to answer
-  + What descriptive and diagnostic analyses do you need?
-      - What kind of analysis do you want to conduct?
-  + Report back to the group
-    + No longer than 60 seconds!
 
-* Use your SMART goals!
-???
-This is supposed to be the L2 activity: ensure that people are leaving understanding some of this data.
 
 ---
 # Thank you
@@ -630,8 +589,6 @@ This is supposed to be the L2 activity: ensure that people are leaving understan
 * [BMI](https://www.npr.org/templates/story/story.php?storyId=106268439)
 * [Coffee Info Graphic](http://www.hammadakbar.com/marketing/content-creation-in-a-slump-here-are-5-ways-qualitative-data-can-help/)
 ---
-
 * [Commentary on Statistical Assessment of Violence Recidivism Risk ](https://www.tandfonline.com/doi/full/10.1080/2330443X.2015.1029338#aHR0cHM6Ly93d3cudGFuZGZvbmxpbmUuY29tL2RvaS9wZGYvMTAuMTA4MC8yMzMwNDQzWC4yMDE1LjEwMjkzMzg/bmVlZEFjY2Vzcz10cnVlQEBAMA==)
 * [Wired: COURTS ARE USING AI TO SENTENCE CRIMINALS. THAT MUST STOP NOW]([https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/)
-
 * [A Comparision of Risk Assessments](http://www.nccdglobal.org/sites/default/files/publication_pdf/nccd_fire_report.pdf)
