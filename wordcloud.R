@@ -11,14 +11,21 @@ library("showtext")
 url <- "https://docs.google.com/spreadsheets/d/1bN3ZZ1hVDD_VDCEtYmMYnIocaWkHn1gOsKs5r5Dt44A/edit#gid=1528966377"
 font_add_google(name = "Nobile")
 source("../scripts/color_scheme.R")
+gs_auth()
+responses <- gs_url("https://docs.google.com/spreadsheets/d/1bN3ZZ1hVDD_VDCEtYmMYnIocaWkHn1gOsKs5r5Dt44A/edit#gid=1528966377")
 
+<<<<<<< HEAD
 responses <- gs_url(url)
 
 sheet <- gs_read(responses)
 email <- sheet$`Email Address`
+=======
+gsheet <- gs_read(responses)
+email <- gsheet$`Email Address`
+>>>>>>> master
 length(unique(email))
 
-words_untidy <- sheet[7]
+words_untidy <- gsheet[7]
 names(words_untidy) <- "text"
 
 words_tidy <- words_untidy %>%
