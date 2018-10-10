@@ -62,7 +62,7 @@ class: center
 
 .bottom[.center[What questions do you have about data and the court?]]
 ???
-First item im quiz: Ask them what they wanted to learn.
+First item In quiz: Ask them what they wanted to learn.
 ---
 class: center, middle
 ## The Bro-Map
@@ -158,9 +158,9 @@ class: center
 --
 * Being critical of data collection and transformation is increasingly important in our society
 
-  + Being critical is not the same as rejecting all datas
+  + Being critical is not the same as rejecting all data
 
-* Your expeirences are vital to the discussion. So is the data.
+* Your experiences are vital to the discussion. So is the data.
 
 --
 
@@ -326,13 +326,13 @@ class:center
 
 * Enter whole numbers
 
-* Seperate numbers with white space
+* Separate numbers with white space
 
   * 44 56 
   
   * not 44, 56
   
-The app will give you the measurs of central tendency and a chart
+The app will give you the measures of central tendency and a chart
 ---
 ## Best Practices: Visualization
 ```{r correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
@@ -372,7 +372,7 @@ Actuarial vs Statistical model discussion can occur.
 
 * Actuarial instruments attach specific statistical weighting to different variables which assess the risk.
 * A key defining aspect of actuarial instruments is that scores obtained on individuals can be related to statistical reference data.
-* ARAI are based on stats and stat modeling and work on predictive, whre stat models work on work on classifcation, predictive, and prescriptive
+* ARAI are based on stats and stat modeling and work on predictive, where stat models work on work on classification, predictive, and prescriptive
 [source](http://www.corinederuiter.eu/risk.php)
 ---
 # Model Fitting
@@ -410,7 +410,7 @@ Actuarial vs Statistical model discussion can occur.
 ## Predictive Analytics
 * What could happen.
 
-  +  Focus on the probabilties of *an event occuring*
+  +  Focus on the probabilities of *an event occuring*
 
 * Chances of winning an election
 
@@ -498,7 +498,7 @@ Actuarial vs Statistical model discussion can occur.
 ---
 # How We Store Data
 
-* Tabluar Data
+* Tabular Data
   + Data in a table format
 
 * Word Document/Text is for reporting, not storing raw data
