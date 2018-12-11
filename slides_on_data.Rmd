@@ -15,6 +15,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+
 ```{r, packages, include=T, echo=FALSE, message = FALSE, warning = FALSE}
 library(tidyverse) 
 library(lubridate)
