@@ -6,7 +6,7 @@ cite <- "https://vincentarelbundock.github.io/Rdatasets/doc/carData/Davis.html"
 #height <- read_csv("/Users/martin.gleason/Dropbox (Personal)/Coding Projects/DataSets/height_weight.csv") #windows version
 
 
-file_location <- "/Users/marty/Dropbox (Personal)/Coding Projects/DataSets/height_weight.csv"
+file_location <- file.path("height_weight.csv")
 height_cm <- read_csv(file_location)
 
 
