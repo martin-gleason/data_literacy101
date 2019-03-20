@@ -34,13 +34,9 @@ source("normal_height.R")
 # need to fix gitv
 
 ```
-class: title-slide
-class: inverse, center
+class: title-slide, inverse
 # Data 101: An E-Learning for Juvenile Probation Staff
-## Or Data Literacy for Court Staff
-
- 
- 
+## Or Data Literacy for Juvenile Court Staff
 
 ---
 .center[#Learning Objectives:]
@@ -53,7 +49,7 @@ class: inverse, center
     + What we collect
     + How we collect it
     + Why we need it
-*  What we can do to improve our Data Quality
+*  What we can do to improve our data quality
 
 *  To discover what you want to learn next
 ---
@@ -223,6 +219,7 @@ class: center
 
 # Types of Data
 ## Quantitative
+ **This maybe on a quiz...**
 
 *  Discrete: only specific values matter for that data
 
@@ -269,7 +266,7 @@ Quantative == Numeric
 
   + Geographic Location/GPS
   
-  + 2016 Election
+  + 2016 Polling Data
   
   + Tax Bracket
 ???
@@ -375,6 +372,13 @@ class:center
   * not 44, 56
   
 The app will give you the measures of central tendency and a chart
+
+---
+```{r rnorm, include = TRUE, warning = FALSE, echo = FALSE}
+source("scripts/rnorm_plot.R")
+df_plot
+```
+
 ---
 ## Best Practices: Visualization
 ```{r correct_viz, include = TRUE, echo = FALSE, message = FALSE, fig.align='center', fig.height = 5, fig.width = 10, message = FALSE}
@@ -436,9 +440,9 @@ Actuarial vs Statistical model discussion can occur.
 
 * Prescriptive: Best course?
     + The end goal
+    
 ???
 Analytics are information that give insight.
-
 ---
 ## Diagnostic Analytics
 
