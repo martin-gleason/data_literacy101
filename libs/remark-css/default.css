@@ -16,8 +16,6 @@ a, a > code {
 
 }
 
-
-
 .footnote {
   position: absolute;
   bottom: 3em;
@@ -28,8 +26,8 @@ a, a > code {
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
-  background-color: #0e0705;
-  color: #d6d6d6;
+  background-color: #a5d3c1;
+  color:  #a5d3c1;
   text-shadow: 0 0 20px #333;
 }
 
